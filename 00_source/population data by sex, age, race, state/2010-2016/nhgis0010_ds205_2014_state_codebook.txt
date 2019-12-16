@@ -1,0 +1,435 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0010_ds205_2014_state'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Citation and Use
+ 
+Additional documentation on NHGIS data sources is available at: 
+    https://www.nhgis.org/documentation/tabular-data 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Year:             2014
+Geographic level: State
+Dataset:          2014 American Community Survey: 1-Year Data
+   NHGIS code:    2014_ACS1
+   NHGIS ID:      ds205
+Breakdown(s):     Geographic Subarea:
+                     Total area (00)
+Data type(s):     (E) Estimates
+                  (M) Margins of error
+ 
+Tables:
+ 
+1. Sex by Age (White Alone)
+   Universe:    People who are White alone
+   Source code: B01001A
+   NHGIS code:  AAAD
+ 
+2. Sex by Age (Black or African American Alone)
+   Universe:    Black or African American alone
+   Source code: B01001B
+   NHGIS code:  AAAF
+ 
+3. Sex by Age (Asian Alone)
+   Universe:    People who are Asian alone
+   Source code: B01001D
+   NHGIS code:  AAAJ
+ 
+4. Sex by Age (Native Hawaiian and Other Pacific Islander Alone)
+   Universe:    People who are Native Hawaiian and Other Pacific Islander alone
+   Source code: B01001E
+   NHGIS code:  AAAL
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Data File Year
+        REGIONA:     Region Code
+        DIVISIONA:   Division Code
+        STATE:       State Name
+        STATEA:      State Code
+        COUNTYA:     County Code
+        COUSUBA:     County Subdivision Code
+        PLACEA:      Place Code
+        AIANHHA:     American Indian Area/Alaska Native Area/Hawaiian Home Land Code
+        ANRCA:       Alaska Native Regional Corporation Code
+        CBSAA:       Metropolitan Statistical Area/Micropolitan Statistical Area Code
+        CSAA:        Combined Statistical Area Code
+        METDIVA:     Metropolitan Division Code
+        NECTAA:      New England City and Town Area Code
+        CNECTAA:     Combined New England City and Town Area Code
+        NECTADIVA:   New England City and Town Area Division Code
+        UAA:         Urban Area Code
+        CDCURRA:     Congressional District (2013-2017, 113th-114th Congress) Code
+        SDELMA:      School District (Elementary)/Remainder Code
+        SDSECA:      School District (Secondary)/Remainder Code
+        SDUNIA:      School District (Unified)/Remainder Code
+        PUMA5A:      Public Use Microdata Sample Area (PUMA) Code
+ 
+Data Type (E):
+    Estimates
+ 
+        NAME_E:      Area Name
+ 
+    Table 1:     Sex by Age (White Alone)
+    Universe:    People who are White alone
+    Source code: B01001A
+    NHGIS code:  AAAD
+        AAADE001:    Total
+        AAADE002:    Male
+        AAADE003:    Male: Under 5 years
+        AAADE004:    Male: 5 to 9 years
+        AAADE005:    Male: 10 to 14 years
+        AAADE006:    Male: 15 to 17 years
+        AAADE007:    Male: 18 and 19 years
+        AAADE008:    Male: 20 to 24 years
+        AAADE009:    Male: 25 to 29 years
+        AAADE010:    Male: 30 to 34 years
+        AAADE011:    Male: 35 to 44 years
+        AAADE012:    Male: 45 to 54 years
+        AAADE013:    Male: 55 to 64 years
+        AAADE014:    Male: 65 to 74 years
+        AAADE015:    Male: 75 to 84 years
+        AAADE016:    Male: 85 years and over
+        AAADE017:    Female
+        AAADE018:    Female: Under 5 years
+        AAADE019:    Female: 5 to 9 years
+        AAADE020:    Female: 10 to 14 years
+        AAADE021:    Female: 15 to 17 years
+        AAADE022:    Female: 18 and 19 years
+        AAADE023:    Female: 20 to 24 years
+        AAADE024:    Female: 25 to 29 years
+        AAADE025:    Female: 30 to 34 years
+        AAADE026:    Female: 35 to 44 years
+        AAADE027:    Female: 45 to 54 years
+        AAADE028:    Female: 55 to 64 years
+        AAADE029:    Female: 65 to 74 years
+        AAADE030:    Female: 75 to 84 years
+        AAADE031:    Female: 85 years and over
+ 
+    Table 2:     Sex by Age (Black or African American Alone)
+    Universe:    Black or African American alone
+    Source code: B01001B
+    NHGIS code:  AAAF
+        AAAFE001:    Total
+        AAAFE002:    Male
+        AAAFE003:    Male: Under 5 years
+        AAAFE004:    Male: 5 to 9 years
+        AAAFE005:    Male: 10 to 14 years
+        AAAFE006:    Male: 15 to 17 years
+        AAAFE007:    Male: 18 and 19 years
+        AAAFE008:    Male: 20 to 24 years
+        AAAFE009:    Male: 25 to 29 years
+        AAAFE010:    Male: 30 to 34 years
+        AAAFE011:    Male: 35 to 44 years
+        AAAFE012:    Male: 45 to 54 years
+        AAAFE013:    Male: 55 to 64 years
+        AAAFE014:    Male: 65 to 74 years
+        AAAFE015:    Male: 75 to 84 years
+        AAAFE016:    Male: 85 years and over
+        AAAFE017:    Female
+        AAAFE018:    Female: Under 5 years
+        AAAFE019:    Female: 5 to 9 years
+        AAAFE020:    Female: 10 to 14 years
+        AAAFE021:    Female: 15 to 17 years
+        AAAFE022:    Female: 18 and 19 years
+        AAAFE023:    Female: 20 to 24 years
+        AAAFE024:    Female: 25 to 29 years
+        AAAFE025:    Female: 30 to 34 years
+        AAAFE026:    Female: 35 to 44 years
+        AAAFE027:    Female: 45 to 54 years
+        AAAFE028:    Female: 55 to 64 years
+        AAAFE029:    Female: 65 to 74 years
+        AAAFE030:    Female: 75 to 84 years
+        AAAFE031:    Female: 85 years and over
+ 
+    Table 3:     Sex by Age (Asian Alone)
+    Universe:    People who are Asian alone
+    Source code: B01001D
+    NHGIS code:  AAAJ
+        AAAJE001:    Total
+        AAAJE002:    Male
+        AAAJE003:    Male: Under 5 years
+        AAAJE004:    Male: 5 to 9 years
+        AAAJE005:    Male: 10 to 14 years
+        AAAJE006:    Male: 15 to 17 years
+        AAAJE007:    Male: 18 and 19 years
+        AAAJE008:    Male: 20 to 24 years
+        AAAJE009:    Male: 25 to 29 years
+        AAAJE010:    Male: 30 to 34 years
+        AAAJE011:    Male: 35 to 44 years
+        AAAJE012:    Male: 45 to 54 years
+        AAAJE013:    Male: 55 to 64 years
+        AAAJE014:    Male: 65 to 74 years
+        AAAJE015:    Male: 75 to 84 years
+        AAAJE016:    Male: 85 years and over
+        AAAJE017:    Female
+        AAAJE018:    Female: Under 5 years
+        AAAJE019:    Female: 5 to 9 years
+        AAAJE020:    Female: 10 to 14 years
+        AAAJE021:    Female: 15 to 17 years
+        AAAJE022:    Female: 18 and 19 years
+        AAAJE023:    Female: 20 to 24 years
+        AAAJE024:    Female: 25 to 29 years
+        AAAJE025:    Female: 30 to 34 years
+        AAAJE026:    Female: 35 to 44 years
+        AAAJE027:    Female: 45 to 54 years
+        AAAJE028:    Female: 55 to 64 years
+        AAAJE029:    Female: 65 to 74 years
+        AAAJE030:    Female: 75 to 84 years
+        AAAJE031:    Female: 85 years and over
+ 
+    Table 4:     Sex by Age (Native Hawaiian and Other Pacific Islander Alone)
+    Universe:    People who are Native Hawaiian and Other Pacific Islander alone
+    Source code: B01001E
+    NHGIS code:  AAAL
+        AAALE001:    Total
+        AAALE002:    Male
+        AAALE003:    Male: Under 5 years
+        AAALE004:    Male: 5 to 9 years
+        AAALE005:    Male: 10 to 14 years
+        AAALE006:    Male: 15 to 17 years
+        AAALE007:    Male: 18 and 19 years
+        AAALE008:    Male: 20 to 24 years
+        AAALE009:    Male: 25 to 29 years
+        AAALE010:    Male: 30 to 34 years
+        AAALE011:    Male: 35 to 44 years
+        AAALE012:    Male: 45 to 54 years
+        AAALE013:    Male: 55 to 64 years
+        AAALE014:    Male: 65 to 74 years
+        AAALE015:    Male: 75 to 84 years
+        AAALE016:    Male: 85 years and over
+        AAALE017:    Female
+        AAALE018:    Female: Under 5 years
+        AAALE019:    Female: 5 to 9 years
+        AAALE020:    Female: 10 to 14 years
+        AAALE021:    Female: 15 to 17 years
+        AAALE022:    Female: 18 and 19 years
+        AAALE023:    Female: 20 to 24 years
+        AAALE024:    Female: 25 to 29 years
+        AAALE025:    Female: 30 to 34 years
+        AAALE026:    Female: 35 to 44 years
+        AAALE027:    Female: 45 to 54 years
+        AAALE028:    Female: 55 to 64 years
+        AAALE029:    Female: 65 to 74 years
+        AAALE030:    Female: 75 to 84 years
+        AAALE031:    Female: 85 years and over
+ 
+Data Type (M):
+    Margins of error
+ 
+        NAME_M:      Area Name
+ 
+    Table 1:     Sex by Age (White Alone)
+    Universe:    People who are White alone
+    Source code: B01001A
+    NHGIS code:  AAAD
+        AAADM001:    Total
+        AAADM002:    Male
+        AAADM003:    Male: Under 5 years
+        AAADM004:    Male: 5 to 9 years
+        AAADM005:    Male: 10 to 14 years
+        AAADM006:    Male: 15 to 17 years
+        AAADM007:    Male: 18 and 19 years
+        AAADM008:    Male: 20 to 24 years
+        AAADM009:    Male: 25 to 29 years
+        AAADM010:    Male: 30 to 34 years
+        AAADM011:    Male: 35 to 44 years
+        AAADM012:    Male: 45 to 54 years
+        AAADM013:    Male: 55 to 64 years
+        AAADM014:    Male: 65 to 74 years
+        AAADM015:    Male: 75 to 84 years
+        AAADM016:    Male: 85 years and over
+        AAADM017:    Female
+        AAADM018:    Female: Under 5 years
+        AAADM019:    Female: 5 to 9 years
+        AAADM020:    Female: 10 to 14 years
+        AAADM021:    Female: 15 to 17 years
+        AAADM022:    Female: 18 and 19 years
+        AAADM023:    Female: 20 to 24 years
+        AAADM024:    Female: 25 to 29 years
+        AAADM025:    Female: 30 to 34 years
+        AAADM026:    Female: 35 to 44 years
+        AAADM027:    Female: 45 to 54 years
+        AAADM028:    Female: 55 to 64 years
+        AAADM029:    Female: 65 to 74 years
+        AAADM030:    Female: 75 to 84 years
+        AAADM031:    Female: 85 years and over
+ 
+    Table 2:     Sex by Age (Black or African American Alone)
+    Universe:    Black or African American alone
+    Source code: B01001B
+    NHGIS code:  AAAF
+        AAAFM001:    Total
+        AAAFM002:    Male
+        AAAFM003:    Male: Under 5 years
+        AAAFM004:    Male: 5 to 9 years
+        AAAFM005:    Male: 10 to 14 years
+        AAAFM006:    Male: 15 to 17 years
+        AAAFM007:    Male: 18 and 19 years
+        AAAFM008:    Male: 20 to 24 years
+        AAAFM009:    Male: 25 to 29 years
+        AAAFM010:    Male: 30 to 34 years
+        AAAFM011:    Male: 35 to 44 years
+        AAAFM012:    Male: 45 to 54 years
+        AAAFM013:    Male: 55 to 64 years
+        AAAFM014:    Male: 65 to 74 years
+        AAAFM015:    Male: 75 to 84 years
+        AAAFM016:    Male: 85 years and over
+        AAAFM017:    Female
+        AAAFM018:    Female: Under 5 years
+        AAAFM019:    Female: 5 to 9 years
+        AAAFM020:    Female: 10 to 14 years
+        AAAFM021:    Female: 15 to 17 years
+        AAAFM022:    Female: 18 and 19 years
+        AAAFM023:    Female: 20 to 24 years
+        AAAFM024:    Female: 25 to 29 years
+        AAAFM025:    Female: 30 to 34 years
+        AAAFM026:    Female: 35 to 44 years
+        AAAFM027:    Female: 45 to 54 years
+        AAAFM028:    Female: 55 to 64 years
+        AAAFM029:    Female: 65 to 74 years
+        AAAFM030:    Female: 75 to 84 years
+        AAAFM031:    Female: 85 years and over
+ 
+    Table 3:     Sex by Age (Asian Alone)
+    Universe:    People who are Asian alone
+    Source code: B01001D
+    NHGIS code:  AAAJ
+        AAAJM001:    Total
+        AAAJM002:    Male
+        AAAJM003:    Male: Under 5 years
+        AAAJM004:    Male: 5 to 9 years
+        AAAJM005:    Male: 10 to 14 years
+        AAAJM006:    Male: 15 to 17 years
+        AAAJM007:    Male: 18 and 19 years
+        AAAJM008:    Male: 20 to 24 years
+        AAAJM009:    Male: 25 to 29 years
+        AAAJM010:    Male: 30 to 34 years
+        AAAJM011:    Male: 35 to 44 years
+        AAAJM012:    Male: 45 to 54 years
+        AAAJM013:    Male: 55 to 64 years
+        AAAJM014:    Male: 65 to 74 years
+        AAAJM015:    Male: 75 to 84 years
+        AAAJM016:    Male: 85 years and over
+        AAAJM017:    Female
+        AAAJM018:    Female: Under 5 years
+        AAAJM019:    Female: 5 to 9 years
+        AAAJM020:    Female: 10 to 14 years
+        AAAJM021:    Female: 15 to 17 years
+        AAAJM022:    Female: 18 and 19 years
+        AAAJM023:    Female: 20 to 24 years
+        AAAJM024:    Female: 25 to 29 years
+        AAAJM025:    Female: 30 to 34 years
+        AAAJM026:    Female: 35 to 44 years
+        AAAJM027:    Female: 45 to 54 years
+        AAAJM028:    Female: 55 to 64 years
+        AAAJM029:    Female: 65 to 74 years
+        AAAJM030:    Female: 75 to 84 years
+        AAAJM031:    Female: 85 years and over
+ 
+    Table 4:     Sex by Age (Native Hawaiian and Other Pacific Islander Alone)
+    Universe:    People who are Native Hawaiian and Other Pacific Islander alone
+    Source code: B01001E
+    NHGIS code:  AAAL
+        AAALM001:    Total
+        AAALM002:    Male
+        AAALM003:    Male: Under 5 years
+        AAALM004:    Male: 5 to 9 years
+        AAALM005:    Male: 10 to 14 years
+        AAALM006:    Male: 15 to 17 years
+        AAALM007:    Male: 18 and 19 years
+        AAALM008:    Male: 20 to 24 years
+        AAALM009:    Male: 25 to 29 years
+        AAALM010:    Male: 30 to 34 years
+        AAALM011:    Male: 35 to 44 years
+        AAALM012:    Male: 45 to 54 years
+        AAALM013:    Male: 55 to 64 years
+        AAALM014:    Male: 65 to 74 years
+        AAALM015:    Male: 75 to 84 years
+        AAALM016:    Male: 85 years and over
+        AAALM017:    Female
+        AAALM018:    Female: Under 5 years
+        AAALM019:    Female: 5 to 9 years
+        AAALM020:    Female: 10 to 14 years
+        AAALM021:    Female: 15 to 17 years
+        AAALM022:    Female: 18 and 19 years
+        AAALM023:    Female: 20 to 24 years
+        AAALM024:    Female: 25 to 29 years
+        AAALM025:    Female: 30 to 34 years
+        AAALM026:    Female: 35 to 44 years
+        AAALM027:    Female: 45 to 54 years
+        AAALM028:    Female: 55 to 64 years
+        AAALM029:    Female: 65 to 74 years
+        AAALM030:    Female: 75 to 84 years
+        AAALM031:    Female: 85 years and over
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* REDISTRIBUTION: You will not redistribute the data without permission.
+
+  You may publish a subset of the data to meet journal requirements for accessing 
+  data related to a particular publication. Contact us for permission for any other 
+  redistribution; we will consider requests for free and commercial redistribution.
+
+* CITATION: You will cite NHGIS appropriately.
+
+    * Publications and research reports employing NHGIS data (either tabular or GIS) 
+      should include the following citation:
+
+        Steven Manson, Jonathan Schroeder, David Van Riper, and Steven Ruggles. 
+        IPUMS National Historical Geographic Information System: Version 14.0 
+        [Database]. Minneapolis, MN: IPUMS. 2019. 
+        http://doi.org/10.18128/D050.V14.0
+
+    * Publications and research reports employing school attendance areas data 
+      (either tabular or GIS) must cite it appropriately. The citation should 
+      include the following:
+
+        The College of William and Mary and the Minnesota Population Center.
+        School Attendance Boundary Information System (SABINS): Version 1.0.
+        Minneapolis, MN: University of Minnesota 2011.
+
+    * For policy briefs, online resources, or articles in the popular press, we 
+      recommend that you cite the use of NHGIS data as follows:
+
+        IPUMS NHGIS, University of Minnesota, www.nhgis.org.
+
+    * If possible, citations involving school attendance areas should also include
+      the URL for the SABINS site:
+
+        http://www.sabinsdata.org/.
+
+These terms of use are a legally binding agreement. You can use the data only in 
+accordance with these terms, and any other use is a violation of the agreement. 
+Violations may result in revocation of the agreement and prohibition from using other 
+IPUMS data. If IPUMS or our partners are harmed from your violation, you are 
+responsible for all damages, including reasonable attorney's fees and expenses.
+        
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+
+Send electronic material to: nhgis@umn.edu
+
+Printed matter should be sent to:
+
+    IPUMS NHGIS
+    Institute for Social Research and Data Innovation
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455

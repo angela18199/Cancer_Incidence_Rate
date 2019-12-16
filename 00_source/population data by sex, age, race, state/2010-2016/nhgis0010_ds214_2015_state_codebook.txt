@@ -1,0 +1,435 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0010_ds214_2015_state'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Citation and Use
+ 
+Additional documentation on NHGIS data sources is available at: 
+    https://www.nhgis.org/documentation/tabular-data 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Year:             2015
+Geographic level: State
+Dataset:          2015 American Community Survey: 1-Year Data
+   NHGIS code:    2015_ACS1
+   NHGIS ID:      ds214
+Breakdown(s):     Geographic Subarea:
+                     Total area (00)
+Data type(s):     (E) Estimates
+                  (M) Margins of error
+ 
+Tables:
+ 
+1. Sex by Age (White Alone)
+   Universe:    People who are White alone
+   Source code: B01001A
+   NHGIS code:  ACKA
+ 
+2. Sex by Age (Black or African American Alone)
+   Universe:    Black or African American alone
+   Source code: B01001B
+   NHGIS code:  ACKC
+ 
+3. Sex by Age (Asian Alone)
+   Universe:    People who are Asian alone
+   Source code: B01001D
+   NHGIS code:  ACKG
+ 
+4. Sex by Age (Native Hawaiian and Other Pacific Islander Alone)
+   Universe:    People who are Native Hawaiian and Other Pacific Islander alone
+   Source code: B01001E
+   NHGIS code:  ACKI
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Data File Year
+        REGIONA:     Region Code
+        DIVISIONA:   Division Code
+        STATE:       State Name
+        STATEA:      State Code
+        COUNTYA:     County Code
+        COUSUBA:     County Subdivision Code
+        PLACEA:      Place Code
+        AIANHHA:     American Indian Area/Alaska Native Area/Hawaiian Home Land Code
+        ANRCA:       Alaska Native Regional Corporation Code
+        CBSAA:       Metropolitan Statistical Area/Micropolitan Statistical Area Code
+        CSAA:        Combined Statistical Area Code
+        METDIVA:     Metropolitan Division Code
+        NECTAA:      New England City and Town Area Code
+        CNECTAA:     Combined New England City and Town Area Code
+        NECTADIVA:   New England City and Town Area Division Code
+        UAA:         Urban Area Code
+        CDCURRA:     Congressional District (2013-2017, 113th-114th Congress) Code
+        SDELMA:      School District (Elementary)/Remainder Code
+        SDSECA:      School District (Secondary)/Remainder Code
+        SDUNIA:      School District (Unified)/Remainder Code
+        PUMA5A:      Public Use Microdata Sample Area (PUMA) Code
+ 
+Data Type (E):
+    Estimates
+ 
+        NAME_E:      Area Name
+ 
+    Table 1:     Sex by Age (White Alone)
+    Universe:    People who are White alone
+    Source code: B01001A
+    NHGIS code:  ACKA
+        ACKAE001:    Total
+        ACKAE002:    Male
+        ACKAE003:    Male: Under 5 years
+        ACKAE004:    Male: 5 to 9 years
+        ACKAE005:    Male: 10 to 14 years
+        ACKAE006:    Male: 15 to 17 years
+        ACKAE007:    Male: 18 and 19 years
+        ACKAE008:    Male: 20 to 24 years
+        ACKAE009:    Male: 25 to 29 years
+        ACKAE010:    Male: 30 to 34 years
+        ACKAE011:    Male: 35 to 44 years
+        ACKAE012:    Male: 45 to 54 years
+        ACKAE013:    Male: 55 to 64 years
+        ACKAE014:    Male: 65 to 74 years
+        ACKAE015:    Male: 75 to 84 years
+        ACKAE016:    Male: 85 years and over
+        ACKAE017:    Female
+        ACKAE018:    Female: Under 5 years
+        ACKAE019:    Female: 5 to 9 years
+        ACKAE020:    Female: 10 to 14 years
+        ACKAE021:    Female: 15 to 17 years
+        ACKAE022:    Female: 18 and 19 years
+        ACKAE023:    Female: 20 to 24 years
+        ACKAE024:    Female: 25 to 29 years
+        ACKAE025:    Female: 30 to 34 years
+        ACKAE026:    Female: 35 to 44 years
+        ACKAE027:    Female: 45 to 54 years
+        ACKAE028:    Female: 55 to 64 years
+        ACKAE029:    Female: 65 to 74 years
+        ACKAE030:    Female: 75 to 84 years
+        ACKAE031:    Female: 85 years and over
+ 
+    Table 2:     Sex by Age (Black or African American Alone)
+    Universe:    Black or African American alone
+    Source code: B01001B
+    NHGIS code:  ACKC
+        ACKCE001:    Total
+        ACKCE002:    Male
+        ACKCE003:    Male: Under 5 years
+        ACKCE004:    Male: 5 to 9 years
+        ACKCE005:    Male: 10 to 14 years
+        ACKCE006:    Male: 15 to 17 years
+        ACKCE007:    Male: 18 and 19 years
+        ACKCE008:    Male: 20 to 24 years
+        ACKCE009:    Male: 25 to 29 years
+        ACKCE010:    Male: 30 to 34 years
+        ACKCE011:    Male: 35 to 44 years
+        ACKCE012:    Male: 45 to 54 years
+        ACKCE013:    Male: 55 to 64 years
+        ACKCE014:    Male: 65 to 74 years
+        ACKCE015:    Male: 75 to 84 years
+        ACKCE016:    Male: 85 years and over
+        ACKCE017:    Female
+        ACKCE018:    Female: Under 5 years
+        ACKCE019:    Female: 5 to 9 years
+        ACKCE020:    Female: 10 to 14 years
+        ACKCE021:    Female: 15 to 17 years
+        ACKCE022:    Female: 18 and 19 years
+        ACKCE023:    Female: 20 to 24 years
+        ACKCE024:    Female: 25 to 29 years
+        ACKCE025:    Female: 30 to 34 years
+        ACKCE026:    Female: 35 to 44 years
+        ACKCE027:    Female: 45 to 54 years
+        ACKCE028:    Female: 55 to 64 years
+        ACKCE029:    Female: 65 to 74 years
+        ACKCE030:    Female: 75 to 84 years
+        ACKCE031:    Female: 85 years and over
+ 
+    Table 3:     Sex by Age (Asian Alone)
+    Universe:    People who are Asian alone
+    Source code: B01001D
+    NHGIS code:  ACKG
+        ACKGE001:    Total
+        ACKGE002:    Male
+        ACKGE003:    Male: Under 5 years
+        ACKGE004:    Male: 5 to 9 years
+        ACKGE005:    Male: 10 to 14 years
+        ACKGE006:    Male: 15 to 17 years
+        ACKGE007:    Male: 18 and 19 years
+        ACKGE008:    Male: 20 to 24 years
+        ACKGE009:    Male: 25 to 29 years
+        ACKGE010:    Male: 30 to 34 years
+        ACKGE011:    Male: 35 to 44 years
+        ACKGE012:    Male: 45 to 54 years
+        ACKGE013:    Male: 55 to 64 years
+        ACKGE014:    Male: 65 to 74 years
+        ACKGE015:    Male: 75 to 84 years
+        ACKGE016:    Male: 85 years and over
+        ACKGE017:    Female
+        ACKGE018:    Female: Under 5 years
+        ACKGE019:    Female: 5 to 9 years
+        ACKGE020:    Female: 10 to 14 years
+        ACKGE021:    Female: 15 to 17 years
+        ACKGE022:    Female: 18 and 19 years
+        ACKGE023:    Female: 20 to 24 years
+        ACKGE024:    Female: 25 to 29 years
+        ACKGE025:    Female: 30 to 34 years
+        ACKGE026:    Female: 35 to 44 years
+        ACKGE027:    Female: 45 to 54 years
+        ACKGE028:    Female: 55 to 64 years
+        ACKGE029:    Female: 65 to 74 years
+        ACKGE030:    Female: 75 to 84 years
+        ACKGE031:    Female: 85 years and over
+ 
+    Table 4:     Sex by Age (Native Hawaiian and Other Pacific Islander Alone)
+    Universe:    People who are Native Hawaiian and Other Pacific Islander alone
+    Source code: B01001E
+    NHGIS code:  ACKI
+        ACKIE001:    Total
+        ACKIE002:    Male
+        ACKIE003:    Male: Under 5 years
+        ACKIE004:    Male: 5 to 9 years
+        ACKIE005:    Male: 10 to 14 years
+        ACKIE006:    Male: 15 to 17 years
+        ACKIE007:    Male: 18 and 19 years
+        ACKIE008:    Male: 20 to 24 years
+        ACKIE009:    Male: 25 to 29 years
+        ACKIE010:    Male: 30 to 34 years
+        ACKIE011:    Male: 35 to 44 years
+        ACKIE012:    Male: 45 to 54 years
+        ACKIE013:    Male: 55 to 64 years
+        ACKIE014:    Male: 65 to 74 years
+        ACKIE015:    Male: 75 to 84 years
+        ACKIE016:    Male: 85 years and over
+        ACKIE017:    Female
+        ACKIE018:    Female: Under 5 years
+        ACKIE019:    Female: 5 to 9 years
+        ACKIE020:    Female: 10 to 14 years
+        ACKIE021:    Female: 15 to 17 years
+        ACKIE022:    Female: 18 and 19 years
+        ACKIE023:    Female: 20 to 24 years
+        ACKIE024:    Female: 25 to 29 years
+        ACKIE025:    Female: 30 to 34 years
+        ACKIE026:    Female: 35 to 44 years
+        ACKIE027:    Female: 45 to 54 years
+        ACKIE028:    Female: 55 to 64 years
+        ACKIE029:    Female: 65 to 74 years
+        ACKIE030:    Female: 75 to 84 years
+        ACKIE031:    Female: 85 years and over
+ 
+Data Type (M):
+    Margins of error
+ 
+        NAME_M:      Area Name
+ 
+    Table 1:     Sex by Age (White Alone)
+    Universe:    People who are White alone
+    Source code: B01001A
+    NHGIS code:  ACKA
+        ACKAM001:    Total
+        ACKAM002:    Male
+        ACKAM003:    Male: Under 5 years
+        ACKAM004:    Male: 5 to 9 years
+        ACKAM005:    Male: 10 to 14 years
+        ACKAM006:    Male: 15 to 17 years
+        ACKAM007:    Male: 18 and 19 years
+        ACKAM008:    Male: 20 to 24 years
+        ACKAM009:    Male: 25 to 29 years
+        ACKAM010:    Male: 30 to 34 years
+        ACKAM011:    Male: 35 to 44 years
+        ACKAM012:    Male: 45 to 54 years
+        ACKAM013:    Male: 55 to 64 years
+        ACKAM014:    Male: 65 to 74 years
+        ACKAM015:    Male: 75 to 84 years
+        ACKAM016:    Male: 85 years and over
+        ACKAM017:    Female
+        ACKAM018:    Female: Under 5 years
+        ACKAM019:    Female: 5 to 9 years
+        ACKAM020:    Female: 10 to 14 years
+        ACKAM021:    Female: 15 to 17 years
+        ACKAM022:    Female: 18 and 19 years
+        ACKAM023:    Female: 20 to 24 years
+        ACKAM024:    Female: 25 to 29 years
+        ACKAM025:    Female: 30 to 34 years
+        ACKAM026:    Female: 35 to 44 years
+        ACKAM027:    Female: 45 to 54 years
+        ACKAM028:    Female: 55 to 64 years
+        ACKAM029:    Female: 65 to 74 years
+        ACKAM030:    Female: 75 to 84 years
+        ACKAM031:    Female: 85 years and over
+ 
+    Table 2:     Sex by Age (Black or African American Alone)
+    Universe:    Black or African American alone
+    Source code: B01001B
+    NHGIS code:  ACKC
+        ACKCM001:    Total
+        ACKCM002:    Male
+        ACKCM003:    Male: Under 5 years
+        ACKCM004:    Male: 5 to 9 years
+        ACKCM005:    Male: 10 to 14 years
+        ACKCM006:    Male: 15 to 17 years
+        ACKCM007:    Male: 18 and 19 years
+        ACKCM008:    Male: 20 to 24 years
+        ACKCM009:    Male: 25 to 29 years
+        ACKCM010:    Male: 30 to 34 years
+        ACKCM011:    Male: 35 to 44 years
+        ACKCM012:    Male: 45 to 54 years
+        ACKCM013:    Male: 55 to 64 years
+        ACKCM014:    Male: 65 to 74 years
+        ACKCM015:    Male: 75 to 84 years
+        ACKCM016:    Male: 85 years and over
+        ACKCM017:    Female
+        ACKCM018:    Female: Under 5 years
+        ACKCM019:    Female: 5 to 9 years
+        ACKCM020:    Female: 10 to 14 years
+        ACKCM021:    Female: 15 to 17 years
+        ACKCM022:    Female: 18 and 19 years
+        ACKCM023:    Female: 20 to 24 years
+        ACKCM024:    Female: 25 to 29 years
+        ACKCM025:    Female: 30 to 34 years
+        ACKCM026:    Female: 35 to 44 years
+        ACKCM027:    Female: 45 to 54 years
+        ACKCM028:    Female: 55 to 64 years
+        ACKCM029:    Female: 65 to 74 years
+        ACKCM030:    Female: 75 to 84 years
+        ACKCM031:    Female: 85 years and over
+ 
+    Table 3:     Sex by Age (Asian Alone)
+    Universe:    People who are Asian alone
+    Source code: B01001D
+    NHGIS code:  ACKG
+        ACKGM001:    Total
+        ACKGM002:    Male
+        ACKGM003:    Male: Under 5 years
+        ACKGM004:    Male: 5 to 9 years
+        ACKGM005:    Male: 10 to 14 years
+        ACKGM006:    Male: 15 to 17 years
+        ACKGM007:    Male: 18 and 19 years
+        ACKGM008:    Male: 20 to 24 years
+        ACKGM009:    Male: 25 to 29 years
+        ACKGM010:    Male: 30 to 34 years
+        ACKGM011:    Male: 35 to 44 years
+        ACKGM012:    Male: 45 to 54 years
+        ACKGM013:    Male: 55 to 64 years
+        ACKGM014:    Male: 65 to 74 years
+        ACKGM015:    Male: 75 to 84 years
+        ACKGM016:    Male: 85 years and over
+        ACKGM017:    Female
+        ACKGM018:    Female: Under 5 years
+        ACKGM019:    Female: 5 to 9 years
+        ACKGM020:    Female: 10 to 14 years
+        ACKGM021:    Female: 15 to 17 years
+        ACKGM022:    Female: 18 and 19 years
+        ACKGM023:    Female: 20 to 24 years
+        ACKGM024:    Female: 25 to 29 years
+        ACKGM025:    Female: 30 to 34 years
+        ACKGM026:    Female: 35 to 44 years
+        ACKGM027:    Female: 45 to 54 years
+        ACKGM028:    Female: 55 to 64 years
+        ACKGM029:    Female: 65 to 74 years
+        ACKGM030:    Female: 75 to 84 years
+        ACKGM031:    Female: 85 years and over
+ 
+    Table 4:     Sex by Age (Native Hawaiian and Other Pacific Islander Alone)
+    Universe:    People who are Native Hawaiian and Other Pacific Islander alone
+    Source code: B01001E
+    NHGIS code:  ACKI
+        ACKIM001:    Total
+        ACKIM002:    Male
+        ACKIM003:    Male: Under 5 years
+        ACKIM004:    Male: 5 to 9 years
+        ACKIM005:    Male: 10 to 14 years
+        ACKIM006:    Male: 15 to 17 years
+        ACKIM007:    Male: 18 and 19 years
+        ACKIM008:    Male: 20 to 24 years
+        ACKIM009:    Male: 25 to 29 years
+        ACKIM010:    Male: 30 to 34 years
+        ACKIM011:    Male: 35 to 44 years
+        ACKIM012:    Male: 45 to 54 years
+        ACKIM013:    Male: 55 to 64 years
+        ACKIM014:    Male: 65 to 74 years
+        ACKIM015:    Male: 75 to 84 years
+        ACKIM016:    Male: 85 years and over
+        ACKIM017:    Female
+        ACKIM018:    Female: Under 5 years
+        ACKIM019:    Female: 5 to 9 years
+        ACKIM020:    Female: 10 to 14 years
+        ACKIM021:    Female: 15 to 17 years
+        ACKIM022:    Female: 18 and 19 years
+        ACKIM023:    Female: 20 to 24 years
+        ACKIM024:    Female: 25 to 29 years
+        ACKIM025:    Female: 30 to 34 years
+        ACKIM026:    Female: 35 to 44 years
+        ACKIM027:    Female: 45 to 54 years
+        ACKIM028:    Female: 55 to 64 years
+        ACKIM029:    Female: 65 to 74 years
+        ACKIM030:    Female: 75 to 84 years
+        ACKIM031:    Female: 85 years and over
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* REDISTRIBUTION: You will not redistribute the data without permission.
+
+  You may publish a subset of the data to meet journal requirements for accessing 
+  data related to a particular publication. Contact us for permission for any other 
+  redistribution; we will consider requests for free and commercial redistribution.
+
+* CITATION: You will cite NHGIS appropriately.
+
+    * Publications and research reports employing NHGIS data (either tabular or GIS) 
+      should include the following citation:
+
+        Steven Manson, Jonathan Schroeder, David Van Riper, and Steven Ruggles. 
+        IPUMS National Historical Geographic Information System: Version 14.0 
+        [Database]. Minneapolis, MN: IPUMS. 2019. 
+        http://doi.org/10.18128/D050.V14.0
+
+    * Publications and research reports employing school attendance areas data 
+      (either tabular or GIS) must cite it appropriately. The citation should 
+      include the following:
+
+        The College of William and Mary and the Minnesota Population Center.
+        School Attendance Boundary Information System (SABINS): Version 1.0.
+        Minneapolis, MN: University of Minnesota 2011.
+
+    * For policy briefs, online resources, or articles in the popular press, we 
+      recommend that you cite the use of NHGIS data as follows:
+
+        IPUMS NHGIS, University of Minnesota, www.nhgis.org.
+
+    * If possible, citations involving school attendance areas should also include
+      the URL for the SABINS site:
+
+        http://www.sabinsdata.org/.
+
+These terms of use are a legally binding agreement. You can use the data only in 
+accordance with these terms, and any other use is a violation of the agreement. 
+Violations may result in revocation of the agreement and prohibition from using other 
+IPUMS data. If IPUMS or our partners are harmed from your violation, you are 
+responsible for all damages, including reasonable attorney's fees and expenses.
+        
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+
+Send electronic material to: nhgis@umn.edu
+
+Printed matter should be sent to:
+
+    IPUMS NHGIS
+    Institute for Social Research and Data Innovation
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455

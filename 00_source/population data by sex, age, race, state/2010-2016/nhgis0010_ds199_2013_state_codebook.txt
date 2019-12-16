@@ -1,0 +1,435 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0010_ds199_2013_state'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Citation and Use
+ 
+Additional documentation on NHGIS data sources is available at: 
+    https://www.nhgis.org/documentation/tabular-data 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Year:             2013
+Geographic level: State
+Dataset:          2013 American Community Survey: 1-Year Data
+   NHGIS code:    2013_ACS1
+   NHGIS ID:      ds199
+Breakdown(s):     Geographic Subarea:
+                     Total area (00)
+Data type(s):     (E) Estimates
+                  (M) Margins of error
+ 
+Tables:
+ 
+1. Sex by Age (White Alone)
+   Universe:    People who are White alone
+   Source code: B01001A
+   NHGIS code:  SAT
+ 
+2. Sex by Age (Black or African American Alone)
+   Universe:    Black or African American alone
+   Source code: B01001B
+   NHGIS code:  SAV
+ 
+3. Sex by Age (Asian Alone)
+   Universe:    People who are Asian alone
+   Source code: B01001D
+   NHGIS code:  SAZ
+ 
+4. Sex by Age (Native Hawaiian and Other Pacific Islander Alone)
+   Universe:    People who are Native Hawaiian and Other Pacific Islander alone
+   Source code: B01001E
+   NHGIS code:  SA1
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Data File Year
+        REGIONA:     Region Code
+        DIVISIONA:   Division Code
+        STATE:       State Name
+        STATEA:      State Code
+        COUNTYA:     County Code
+        COUSUBA:     County Subdivision Code
+        PLACEA:      Place Code
+        AIANHHA:     American Indian Area/Alaska Native Area/Hawaiian Home Land Code
+        ANRCA:       Alaska Native Regional Corporation Code
+        CBSAA:       Metropolitan Statistical Area/Micropolitan Statistical Area Code
+        CSAA:        Combined Statistical Area Code
+        METDIVA:     Metropolitan Division Code
+        NECTAA:      New England City and Town Area Code
+        CNECTAA:     Combined New England City and Town Area Code
+        NECTADIVA:   New England City and Town Area Division Code
+        UAA:         Urban Area Code
+        CDCURRA:     Congressional District (2013-2015, 113th Congress) Code
+        SDELMA:      School District (Elementary)/Remainder Code
+        SDSECA:      School District (Secondary)/Remainder Code
+        SDUNIA:      School District (Unified)/Remainder Code
+        PUMA5A:      Public Use Microdata Sample Area (PUMA) Code
+ 
+Data Type (E):
+    Estimates
+ 
+        NAME_E:      Area Name
+ 
+    Table 1:     Sex by Age (White Alone)
+    Universe:    People who are White alone
+    Source code: B01001A
+    NHGIS code:  SAT
+        SATE001:     Total
+        SATE002:     Male
+        SATE003:     Male: Under 5 years
+        SATE004:     Male: 5 to 9 years
+        SATE005:     Male: 10 to 14 years
+        SATE006:     Male: 15 to 17 years
+        SATE007:     Male: 18 and 19 years
+        SATE008:     Male: 20 to 24 years
+        SATE009:     Male: 25 to 29 years
+        SATE010:     Male: 30 to 34 years
+        SATE011:     Male: 35 to 44 years
+        SATE012:     Male: 45 to 54 years
+        SATE013:     Male: 55 to 64 years
+        SATE014:     Male: 65 to 74 years
+        SATE015:     Male: 75 to 84 years
+        SATE016:     Male: 85 years and over
+        SATE017:     Female
+        SATE018:     Female: Under 5 years
+        SATE019:     Female: 5 to 9 years
+        SATE020:     Female: 10 to 14 years
+        SATE021:     Female: 15 to 17 years
+        SATE022:     Female: 18 and 19 years
+        SATE023:     Female: 20 to 24 years
+        SATE024:     Female: 25 to 29 years
+        SATE025:     Female: 30 to 34 years
+        SATE026:     Female: 35 to 44 years
+        SATE027:     Female: 45 to 54 years
+        SATE028:     Female: 55 to 64 years
+        SATE029:     Female: 65 to 74 years
+        SATE030:     Female: 75 to 84 years
+        SATE031:     Female: 85 years and over
+ 
+    Table 2:     Sex by Age (Black or African American Alone)
+    Universe:    Black or African American alone
+    Source code: B01001B
+    NHGIS code:  SAV
+        SAVE001:     Total
+        SAVE002:     Male
+        SAVE003:     Male: Under 5 years
+        SAVE004:     Male: 5 to 9 years
+        SAVE005:     Male: 10 to 14 years
+        SAVE006:     Male: 15 to 17 years
+        SAVE007:     Male: 18 and 19 years
+        SAVE008:     Male: 20 to 24 years
+        SAVE009:     Male: 25 to 29 years
+        SAVE010:     Male: 30 to 34 years
+        SAVE011:     Male: 35 to 44 years
+        SAVE012:     Male: 45 to 54 years
+        SAVE013:     Male: 55 to 64 years
+        SAVE014:     Male: 65 to 74 years
+        SAVE015:     Male: 75 to 84 years
+        SAVE016:     Male: 85 years and over
+        SAVE017:     Female
+        SAVE018:     Female: Under 5 years
+        SAVE019:     Female: 5 to 9 years
+        SAVE020:     Female: 10 to 14 years
+        SAVE021:     Female: 15 to 17 years
+        SAVE022:     Female: 18 and 19 years
+        SAVE023:     Female: 20 to 24 years
+        SAVE024:     Female: 25 to 29 years
+        SAVE025:     Female: 30 to 34 years
+        SAVE026:     Female: 35 to 44 years
+        SAVE027:     Female: 45 to 54 years
+        SAVE028:     Female: 55 to 64 years
+        SAVE029:     Female: 65 to 74 years
+        SAVE030:     Female: 75 to 84 years
+        SAVE031:     Female: 85 years and over
+ 
+    Table 3:     Sex by Age (Asian Alone)
+    Universe:    People who are Asian alone
+    Source code: B01001D
+    NHGIS code:  SAZ
+        SAZE001:     Total
+        SAZE002:     Male
+        SAZE003:     Male: Under 5 years
+        SAZE004:     Male: 5 to 9 years
+        SAZE005:     Male: 10 to 14 years
+        SAZE006:     Male: 15 to 17 years
+        SAZE007:     Male: 18 and 19 years
+        SAZE008:     Male: 20 to 24 years
+        SAZE009:     Male: 25 to 29 years
+        SAZE010:     Male: 30 to 34 years
+        SAZE011:     Male: 35 to 44 years
+        SAZE012:     Male: 45 to 54 years
+        SAZE013:     Male: 55 to 64 years
+        SAZE014:     Male: 65 to 74 years
+        SAZE015:     Male: 75 to 84 years
+        SAZE016:     Male: 85 years and over
+        SAZE017:     Female
+        SAZE018:     Female: Under 5 years
+        SAZE019:     Female: 5 to 9 years
+        SAZE020:     Female: 10 to 14 years
+        SAZE021:     Female: 15 to 17 years
+        SAZE022:     Female: 18 and 19 years
+        SAZE023:     Female: 20 to 24 years
+        SAZE024:     Female: 25 to 29 years
+        SAZE025:     Female: 30 to 34 years
+        SAZE026:     Female: 35 to 44 years
+        SAZE027:     Female: 45 to 54 years
+        SAZE028:     Female: 55 to 64 years
+        SAZE029:     Female: 65 to 74 years
+        SAZE030:     Female: 75 to 84 years
+        SAZE031:     Female: 85 years and over
+ 
+    Table 4:     Sex by Age (Native Hawaiian and Other Pacific Islander Alone)
+    Universe:    People who are Native Hawaiian and Other Pacific Islander alone
+    Source code: B01001E
+    NHGIS code:  SA1
+        SA1E001:     Total
+        SA1E002:     Male
+        SA1E003:     Male: Under 5 years
+        SA1E004:     Male: 5 to 9 years
+        SA1E005:     Male: 10 to 14 years
+        SA1E006:     Male: 15 to 17 years
+        SA1E007:     Male: 18 and 19 years
+        SA1E008:     Male: 20 to 24 years
+        SA1E009:     Male: 25 to 29 years
+        SA1E010:     Male: 30 to 34 years
+        SA1E011:     Male: 35 to 44 years
+        SA1E012:     Male: 45 to 54 years
+        SA1E013:     Male: 55 to 64 years
+        SA1E014:     Male: 65 to 74 years
+        SA1E015:     Male: 75 to 84 years
+        SA1E016:     Male: 85 years and over
+        SA1E017:     Female
+        SA1E018:     Female: Under 5 years
+        SA1E019:     Female: 5 to 9 years
+        SA1E020:     Female: 10 to 14 years
+        SA1E021:     Female: 15 to 17 years
+        SA1E022:     Female: 18 and 19 years
+        SA1E023:     Female: 20 to 24 years
+        SA1E024:     Female: 25 to 29 years
+        SA1E025:     Female: 30 to 34 years
+        SA1E026:     Female: 35 to 44 years
+        SA1E027:     Female: 45 to 54 years
+        SA1E028:     Female: 55 to 64 years
+        SA1E029:     Female: 65 to 74 years
+        SA1E030:     Female: 75 to 84 years
+        SA1E031:     Female: 85 years and over
+ 
+Data Type (M):
+    Margins of error
+ 
+        NAME_M:      Area Name
+ 
+    Table 1:     Sex by Age (White Alone)
+    Universe:    People who are White alone
+    Source code: B01001A
+    NHGIS code:  SAT
+        SATM001:     Total
+        SATM002:     Male
+        SATM003:     Male: Under 5 years
+        SATM004:     Male: 5 to 9 years
+        SATM005:     Male: 10 to 14 years
+        SATM006:     Male: 15 to 17 years
+        SATM007:     Male: 18 and 19 years
+        SATM008:     Male: 20 to 24 years
+        SATM009:     Male: 25 to 29 years
+        SATM010:     Male: 30 to 34 years
+        SATM011:     Male: 35 to 44 years
+        SATM012:     Male: 45 to 54 years
+        SATM013:     Male: 55 to 64 years
+        SATM014:     Male: 65 to 74 years
+        SATM015:     Male: 75 to 84 years
+        SATM016:     Male: 85 years and over
+        SATM017:     Female
+        SATM018:     Female: Under 5 years
+        SATM019:     Female: 5 to 9 years
+        SATM020:     Female: 10 to 14 years
+        SATM021:     Female: 15 to 17 years
+        SATM022:     Female: 18 and 19 years
+        SATM023:     Female: 20 to 24 years
+        SATM024:     Female: 25 to 29 years
+        SATM025:     Female: 30 to 34 years
+        SATM026:     Female: 35 to 44 years
+        SATM027:     Female: 45 to 54 years
+        SATM028:     Female: 55 to 64 years
+        SATM029:     Female: 65 to 74 years
+        SATM030:     Female: 75 to 84 years
+        SATM031:     Female: 85 years and over
+ 
+    Table 2:     Sex by Age (Black or African American Alone)
+    Universe:    Black or African American alone
+    Source code: B01001B
+    NHGIS code:  SAV
+        SAVM001:     Total
+        SAVM002:     Male
+        SAVM003:     Male: Under 5 years
+        SAVM004:     Male: 5 to 9 years
+        SAVM005:     Male: 10 to 14 years
+        SAVM006:     Male: 15 to 17 years
+        SAVM007:     Male: 18 and 19 years
+        SAVM008:     Male: 20 to 24 years
+        SAVM009:     Male: 25 to 29 years
+        SAVM010:     Male: 30 to 34 years
+        SAVM011:     Male: 35 to 44 years
+        SAVM012:     Male: 45 to 54 years
+        SAVM013:     Male: 55 to 64 years
+        SAVM014:     Male: 65 to 74 years
+        SAVM015:     Male: 75 to 84 years
+        SAVM016:     Male: 85 years and over
+        SAVM017:     Female
+        SAVM018:     Female: Under 5 years
+        SAVM019:     Female: 5 to 9 years
+        SAVM020:     Female: 10 to 14 years
+        SAVM021:     Female: 15 to 17 years
+        SAVM022:     Female: 18 and 19 years
+        SAVM023:     Female: 20 to 24 years
+        SAVM024:     Female: 25 to 29 years
+        SAVM025:     Female: 30 to 34 years
+        SAVM026:     Female: 35 to 44 years
+        SAVM027:     Female: 45 to 54 years
+        SAVM028:     Female: 55 to 64 years
+        SAVM029:     Female: 65 to 74 years
+        SAVM030:     Female: 75 to 84 years
+        SAVM031:     Female: 85 years and over
+ 
+    Table 3:     Sex by Age (Asian Alone)
+    Universe:    People who are Asian alone
+    Source code: B01001D
+    NHGIS code:  SAZ
+        SAZM001:     Total
+        SAZM002:     Male
+        SAZM003:     Male: Under 5 years
+        SAZM004:     Male: 5 to 9 years
+        SAZM005:     Male: 10 to 14 years
+        SAZM006:     Male: 15 to 17 years
+        SAZM007:     Male: 18 and 19 years
+        SAZM008:     Male: 20 to 24 years
+        SAZM009:     Male: 25 to 29 years
+        SAZM010:     Male: 30 to 34 years
+        SAZM011:     Male: 35 to 44 years
+        SAZM012:     Male: 45 to 54 years
+        SAZM013:     Male: 55 to 64 years
+        SAZM014:     Male: 65 to 74 years
+        SAZM015:     Male: 75 to 84 years
+        SAZM016:     Male: 85 years and over
+        SAZM017:     Female
+        SAZM018:     Female: Under 5 years
+        SAZM019:     Female: 5 to 9 years
+        SAZM020:     Female: 10 to 14 years
+        SAZM021:     Female: 15 to 17 years
+        SAZM022:     Female: 18 and 19 years
+        SAZM023:     Female: 20 to 24 years
+        SAZM024:     Female: 25 to 29 years
+        SAZM025:     Female: 30 to 34 years
+        SAZM026:     Female: 35 to 44 years
+        SAZM027:     Female: 45 to 54 years
+        SAZM028:     Female: 55 to 64 years
+        SAZM029:     Female: 65 to 74 years
+        SAZM030:     Female: 75 to 84 years
+        SAZM031:     Female: 85 years and over
+ 
+    Table 4:     Sex by Age (Native Hawaiian and Other Pacific Islander Alone)
+    Universe:    People who are Native Hawaiian and Other Pacific Islander alone
+    Source code: B01001E
+    NHGIS code:  SA1
+        SA1M001:     Total
+        SA1M002:     Male
+        SA1M003:     Male: Under 5 years
+        SA1M004:     Male: 5 to 9 years
+        SA1M005:     Male: 10 to 14 years
+        SA1M006:     Male: 15 to 17 years
+        SA1M007:     Male: 18 and 19 years
+        SA1M008:     Male: 20 to 24 years
+        SA1M009:     Male: 25 to 29 years
+        SA1M010:     Male: 30 to 34 years
+        SA1M011:     Male: 35 to 44 years
+        SA1M012:     Male: 45 to 54 years
+        SA1M013:     Male: 55 to 64 years
+        SA1M014:     Male: 65 to 74 years
+        SA1M015:     Male: 75 to 84 years
+        SA1M016:     Male: 85 years and over
+        SA1M017:     Female
+        SA1M018:     Female: Under 5 years
+        SA1M019:     Female: 5 to 9 years
+        SA1M020:     Female: 10 to 14 years
+        SA1M021:     Female: 15 to 17 years
+        SA1M022:     Female: 18 and 19 years
+        SA1M023:     Female: 20 to 24 years
+        SA1M024:     Female: 25 to 29 years
+        SA1M025:     Female: 30 to 34 years
+        SA1M026:     Female: 35 to 44 years
+        SA1M027:     Female: 45 to 54 years
+        SA1M028:     Female: 55 to 64 years
+        SA1M029:     Female: 65 to 74 years
+        SA1M030:     Female: 75 to 84 years
+        SA1M031:     Female: 85 years and over
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* REDISTRIBUTION: You will not redistribute the data without permission.
+
+  You may publish a subset of the data to meet journal requirements for accessing 
+  data related to a particular publication. Contact us for permission for any other 
+  redistribution; we will consider requests for free and commercial redistribution.
+
+* CITATION: You will cite NHGIS appropriately.
+
+    * Publications and research reports employing NHGIS data (either tabular or GIS) 
+      should include the following citation:
+
+        Steven Manson, Jonathan Schroeder, David Van Riper, and Steven Ruggles. 
+        IPUMS National Historical Geographic Information System: Version 14.0 
+        [Database]. Minneapolis, MN: IPUMS. 2019. 
+        http://doi.org/10.18128/D050.V14.0
+
+    * Publications and research reports employing school attendance areas data 
+      (either tabular or GIS) must cite it appropriately. The citation should 
+      include the following:
+
+        The College of William and Mary and the Minnesota Population Center.
+        School Attendance Boundary Information System (SABINS): Version 1.0.
+        Minneapolis, MN: University of Minnesota 2011.
+
+    * For policy briefs, online resources, or articles in the popular press, we 
+      recommend that you cite the use of NHGIS data as follows:
+
+        IPUMS NHGIS, University of Minnesota, www.nhgis.org.
+
+    * If possible, citations involving school attendance areas should also include
+      the URL for the SABINS site:
+
+        http://www.sabinsdata.org/.
+
+These terms of use are a legally binding agreement. You can use the data only in 
+accordance with these terms, and any other use is a violation of the agreement. 
+Violations may result in revocation of the agreement and prohibition from using other 
+IPUMS data. If IPUMS or our partners are harmed from your violation, you are 
+responsible for all damages, including reasonable attorney's fees and expenses.
+        
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+
+Send electronic material to: nhgis@umn.edu
+
+Printed matter should be sent to:
+
+    IPUMS NHGIS
+    Institute for Social Research and Data Innovation
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455

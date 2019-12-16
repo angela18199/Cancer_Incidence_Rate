@@ -1,0 +1,435 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0010_ds175_2010_state'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Citation and Use
+ 
+Additional documentation on NHGIS data sources is available at: 
+    https://www.nhgis.org/documentation/tabular-data 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Year:             2010
+Geographic level: State
+Dataset:          2010 American Community Survey: 1-Year Data
+   NHGIS code:    2010_ACS1
+   NHGIS ID:      ds175
+Breakdown(s):     Geographic Subarea:
+                     Total area (00)
+Data type(s):     (E) Estimates
+                  (M) Margins of error
+ 
+Tables:
+ 
+1. Sex by Age (White Alone)
+   Universe:    People who are White alone
+   Source code: B01001A
+   NHGIS code:  IG5
+ 
+2. Sex by Age (Black or African American Alone)
+   Universe:    People who are Black or African American alone
+   Source code: B01001B
+   NHGIS code:  IG7
+ 
+3. Sex by Age (Asian Alone)
+   Universe:    People who are Asian alone
+   Source code: B01001D
+   NHGIS code:  IHB
+ 
+4. Sex by Age (Native Hawaiian and Other Pacific Islander Alone)
+   Universe:    People who are Native Hawaiian and Other Pacific Islander alone
+   Source code: B01001E
+   NHGIS code:  IHD
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Data File Year
+        REGIONA:     Region Code
+        DIVISIONA:   Division Code
+        STATE:       State Name
+        STATEA:      State Code
+        COUNTYA:     County Code
+        COUSUBA:     County Subdivision Code
+        PLACEA:      Place Code
+        AIANHHA:     American Indian Area/Alaska Native Area/Hawaiian Home Land Code
+        ANRCA:       Alaska Native Regional Corporation Code
+        CBSAA:       Metropolitan Statistical Area/Micropolitan Statistical Area Code
+        CSAA:        Combined Statistical Area Code
+        METDIVA:     Metropolitan Division Code
+        NECTAA:      New England City and Town Area Code
+        CNECTAA:     Combined New England City and Town Area Code
+        NECTADIVA:   NECTA Division Code
+        UAA:         Urban Area Code
+        CDCURRA:     Congressional District (111th Congress) Code
+        SDELMA:      School District (Elementary)/Remainder Code
+        SDSECA:      School District (Secondary)/Remainder Code
+        SDUNIA:      School District (Unified)/Remainder Code
+        PUMA5A:      Public Use Microdata Sample Area (PUMA) Code
+ 
+Data Type (E):
+    Estimates
+ 
+        NAME_E:      Area Name
+ 
+    Table 1:     Sex by Age (White Alone)
+    Universe:    People who are White alone
+    Source code: B01001A
+    NHGIS code:  IG5
+        IG5E001:     Total
+        IG5E002:     Male
+        IG5E003:     Male: Under 5 years
+        IG5E004:     Male: 5 to 9 years
+        IG5E005:     Male: 10 to 14 years
+        IG5E006:     Male: 15 to 17 years
+        IG5E007:     Male: 18 and 19 years
+        IG5E008:     Male: 20 to 24 years
+        IG5E009:     Male: 25 to 29 years
+        IG5E010:     Male: 30 to 34 years
+        IG5E011:     Male: 35 to 44 years
+        IG5E012:     Male: 45 to 54 years
+        IG5E013:     Male: 55 to 64 years
+        IG5E014:     Male: 65 to 74 years
+        IG5E015:     Male: 75 to 84 years
+        IG5E016:     Male: 85 years and over
+        IG5E017:     Female
+        IG5E018:     Female: Under 5 years
+        IG5E019:     Female: 5 to 9 years
+        IG5E020:     Female: 10 to 14 years
+        IG5E021:     Female: 15 to 17 years
+        IG5E022:     Female: 18 and 19 years
+        IG5E023:     Female: 20 to 24 years
+        IG5E024:     Female: 25 to 29 years
+        IG5E025:     Female: 30 to 34 years
+        IG5E026:     Female: 35 to 44 years
+        IG5E027:     Female: 45 to 54 years
+        IG5E028:     Female: 55 to 64 years
+        IG5E029:     Female: 65 to 74 years
+        IG5E030:     Female: 75 to 84 years
+        IG5E031:     Female: 85 years and over
+ 
+    Table 2:     Sex by Age (Black or African American Alone)
+    Universe:    People who are Black or African American alone
+    Source code: B01001B
+    NHGIS code:  IG7
+        IG7E001:     Total
+        IG7E002:     Male
+        IG7E003:     Male: Under 5 years
+        IG7E004:     Male: 5 to 9 years
+        IG7E005:     Male: 10 to 14 years
+        IG7E006:     Male: 15 to 17 years
+        IG7E007:     Male: 18 and 19 years
+        IG7E008:     Male: 20 to 24 years
+        IG7E009:     Male: 25 to 29 years
+        IG7E010:     Male: 30 to 34 years
+        IG7E011:     Male: 35 to 44 years
+        IG7E012:     Male: 45 to 54 years
+        IG7E013:     Male: 55 to 64 years
+        IG7E014:     Male: 65 to 74 years
+        IG7E015:     Male: 75 to 84 years
+        IG7E016:     Male: 85 years and over
+        IG7E017:     Female
+        IG7E018:     Female: Under 5 years
+        IG7E019:     Female: 5 to 9 years
+        IG7E020:     Female: 10 to 14 years
+        IG7E021:     Female: 15 to 17 years
+        IG7E022:     Female: 18 and 19 years
+        IG7E023:     Female: 20 to 24 years
+        IG7E024:     Female: 25 to 29 years
+        IG7E025:     Female: 30 to 34 years
+        IG7E026:     Female: 35 to 44 years
+        IG7E027:     Female: 45 to 54 years
+        IG7E028:     Female: 55 to 64 years
+        IG7E029:     Female: 65 to 74 years
+        IG7E030:     Female: 75 to 84 years
+        IG7E031:     Female: 85 years and over
+ 
+    Table 3:     Sex by Age (Asian Alone)
+    Universe:    People who are Asian alone
+    Source code: B01001D
+    NHGIS code:  IHB
+        IHBE001:     Total
+        IHBE002:     Male
+        IHBE003:     Male: Under 5 years
+        IHBE004:     Male: 5 to 9 years
+        IHBE005:     Male: 10 to 14 years
+        IHBE006:     Male: 15 to 17 years
+        IHBE007:     Male: 18 and 19 years
+        IHBE008:     Male: 20 to 24 years
+        IHBE009:     Male: 25 to 29 years
+        IHBE010:     Male: 30 to 34 years
+        IHBE011:     Male: 35 to 44 years
+        IHBE012:     Male: 45 to 54 years
+        IHBE013:     Male: 55 to 64 years
+        IHBE014:     Male: 65 to 74 years
+        IHBE015:     Male: 75 to 84 years
+        IHBE016:     Male: 85 years and over
+        IHBE017:     Female
+        IHBE018:     Female: Under 5 years
+        IHBE019:     Female: 5 to 9 years
+        IHBE020:     Female: 10 to 14 years
+        IHBE021:     Female: 15 to 17 years
+        IHBE022:     Female: 18 and 19 years
+        IHBE023:     Female: 20 to 24 years
+        IHBE024:     Female: 25 to 29 years
+        IHBE025:     Female: 30 to 34 years
+        IHBE026:     Female: 35 to 44 years
+        IHBE027:     Female: 45 to 54 years
+        IHBE028:     Female: 55 to 64 years
+        IHBE029:     Female: 65 to 74 years
+        IHBE030:     Female: 75 to 84 years
+        IHBE031:     Female: 85 years and over
+ 
+    Table 4:     Sex by Age (Native Hawaiian and Other Pacific Islander Alone)
+    Universe:    People who are Native Hawaiian and Other Pacific Islander alone
+    Source code: B01001E
+    NHGIS code:  IHD
+        IHDE001:     Total
+        IHDE002:     Male
+        IHDE003:     Male: Under 5 years
+        IHDE004:     Male: 5 to 9 years
+        IHDE005:     Male: 10 to 14 years
+        IHDE006:     Male: 15 to 17 years
+        IHDE007:     Male: 18 and 19 years
+        IHDE008:     Male: 20 to 24 years
+        IHDE009:     Male: 25 to 29 years
+        IHDE010:     Male: 30 to 34 years
+        IHDE011:     Male: 35 to 44 years
+        IHDE012:     Male: 45 to 54 years
+        IHDE013:     Male: 55 to 64 years
+        IHDE014:     Male: 65 to 74 years
+        IHDE015:     Male: 75 to 84 years
+        IHDE016:     Male: 85 years and over
+        IHDE017:     Female
+        IHDE018:     Female: Under 5 years
+        IHDE019:     Female: 5 to 9 years
+        IHDE020:     Female: 10 to 14 years
+        IHDE021:     Female: 15 to 17 years
+        IHDE022:     Female: 18 and 19 years
+        IHDE023:     Female: 20 to 24 years
+        IHDE024:     Female: 25 to 29 years
+        IHDE025:     Female: 30 to 34 years
+        IHDE026:     Female: 35 to 44 years
+        IHDE027:     Female: 45 to 54 years
+        IHDE028:     Female: 55 to 64 years
+        IHDE029:     Female: 65 to 74 years
+        IHDE030:     Female: 75 to 84 years
+        IHDE031:     Female: 85 years and over
+ 
+Data Type (M):
+    Margins of error
+ 
+        NAME_M:      Area Name
+ 
+    Table 1:     Sex by Age (White Alone)
+    Universe:    People who are White alone
+    Source code: B01001A
+    NHGIS code:  IG5
+        IG5M001:     Total
+        IG5M002:     Male
+        IG5M003:     Male: Under 5 years
+        IG5M004:     Male: 5 to 9 years
+        IG5M005:     Male: 10 to 14 years
+        IG5M006:     Male: 15 to 17 years
+        IG5M007:     Male: 18 and 19 years
+        IG5M008:     Male: 20 to 24 years
+        IG5M009:     Male: 25 to 29 years
+        IG5M010:     Male: 30 to 34 years
+        IG5M011:     Male: 35 to 44 years
+        IG5M012:     Male: 45 to 54 years
+        IG5M013:     Male: 55 to 64 years
+        IG5M014:     Male: 65 to 74 years
+        IG5M015:     Male: 75 to 84 years
+        IG5M016:     Male: 85 years and over
+        IG5M017:     Female
+        IG5M018:     Female: Under 5 years
+        IG5M019:     Female: 5 to 9 years
+        IG5M020:     Female: 10 to 14 years
+        IG5M021:     Female: 15 to 17 years
+        IG5M022:     Female: 18 and 19 years
+        IG5M023:     Female: 20 to 24 years
+        IG5M024:     Female: 25 to 29 years
+        IG5M025:     Female: 30 to 34 years
+        IG5M026:     Female: 35 to 44 years
+        IG5M027:     Female: 45 to 54 years
+        IG5M028:     Female: 55 to 64 years
+        IG5M029:     Female: 65 to 74 years
+        IG5M030:     Female: 75 to 84 years
+        IG5M031:     Female: 85 years and over
+ 
+    Table 2:     Sex by Age (Black or African American Alone)
+    Universe:    People who are Black or African American alone
+    Source code: B01001B
+    NHGIS code:  IG7
+        IG7M001:     Total
+        IG7M002:     Male
+        IG7M003:     Male: Under 5 years
+        IG7M004:     Male: 5 to 9 years
+        IG7M005:     Male: 10 to 14 years
+        IG7M006:     Male: 15 to 17 years
+        IG7M007:     Male: 18 and 19 years
+        IG7M008:     Male: 20 to 24 years
+        IG7M009:     Male: 25 to 29 years
+        IG7M010:     Male: 30 to 34 years
+        IG7M011:     Male: 35 to 44 years
+        IG7M012:     Male: 45 to 54 years
+        IG7M013:     Male: 55 to 64 years
+        IG7M014:     Male: 65 to 74 years
+        IG7M015:     Male: 75 to 84 years
+        IG7M016:     Male: 85 years and over
+        IG7M017:     Female
+        IG7M018:     Female: Under 5 years
+        IG7M019:     Female: 5 to 9 years
+        IG7M020:     Female: 10 to 14 years
+        IG7M021:     Female: 15 to 17 years
+        IG7M022:     Female: 18 and 19 years
+        IG7M023:     Female: 20 to 24 years
+        IG7M024:     Female: 25 to 29 years
+        IG7M025:     Female: 30 to 34 years
+        IG7M026:     Female: 35 to 44 years
+        IG7M027:     Female: 45 to 54 years
+        IG7M028:     Female: 55 to 64 years
+        IG7M029:     Female: 65 to 74 years
+        IG7M030:     Female: 75 to 84 years
+        IG7M031:     Female: 85 years and over
+ 
+    Table 3:     Sex by Age (Asian Alone)
+    Universe:    People who are Asian alone
+    Source code: B01001D
+    NHGIS code:  IHB
+        IHBM001:     Total
+        IHBM002:     Male
+        IHBM003:     Male: Under 5 years
+        IHBM004:     Male: 5 to 9 years
+        IHBM005:     Male: 10 to 14 years
+        IHBM006:     Male: 15 to 17 years
+        IHBM007:     Male: 18 and 19 years
+        IHBM008:     Male: 20 to 24 years
+        IHBM009:     Male: 25 to 29 years
+        IHBM010:     Male: 30 to 34 years
+        IHBM011:     Male: 35 to 44 years
+        IHBM012:     Male: 45 to 54 years
+        IHBM013:     Male: 55 to 64 years
+        IHBM014:     Male: 65 to 74 years
+        IHBM015:     Male: 75 to 84 years
+        IHBM016:     Male: 85 years and over
+        IHBM017:     Female
+        IHBM018:     Female: Under 5 years
+        IHBM019:     Female: 5 to 9 years
+        IHBM020:     Female: 10 to 14 years
+        IHBM021:     Female: 15 to 17 years
+        IHBM022:     Female: 18 and 19 years
+        IHBM023:     Female: 20 to 24 years
+        IHBM024:     Female: 25 to 29 years
+        IHBM025:     Female: 30 to 34 years
+        IHBM026:     Female: 35 to 44 years
+        IHBM027:     Female: 45 to 54 years
+        IHBM028:     Female: 55 to 64 years
+        IHBM029:     Female: 65 to 74 years
+        IHBM030:     Female: 75 to 84 years
+        IHBM031:     Female: 85 years and over
+ 
+    Table 4:     Sex by Age (Native Hawaiian and Other Pacific Islander Alone)
+    Universe:    People who are Native Hawaiian and Other Pacific Islander alone
+    Source code: B01001E
+    NHGIS code:  IHD
+        IHDM001:     Total
+        IHDM002:     Male
+        IHDM003:     Male: Under 5 years
+        IHDM004:     Male: 5 to 9 years
+        IHDM005:     Male: 10 to 14 years
+        IHDM006:     Male: 15 to 17 years
+        IHDM007:     Male: 18 and 19 years
+        IHDM008:     Male: 20 to 24 years
+        IHDM009:     Male: 25 to 29 years
+        IHDM010:     Male: 30 to 34 years
+        IHDM011:     Male: 35 to 44 years
+        IHDM012:     Male: 45 to 54 years
+        IHDM013:     Male: 55 to 64 years
+        IHDM014:     Male: 65 to 74 years
+        IHDM015:     Male: 75 to 84 years
+        IHDM016:     Male: 85 years and over
+        IHDM017:     Female
+        IHDM018:     Female: Under 5 years
+        IHDM019:     Female: 5 to 9 years
+        IHDM020:     Female: 10 to 14 years
+        IHDM021:     Female: 15 to 17 years
+        IHDM022:     Female: 18 and 19 years
+        IHDM023:     Female: 20 to 24 years
+        IHDM024:     Female: 25 to 29 years
+        IHDM025:     Female: 30 to 34 years
+        IHDM026:     Female: 35 to 44 years
+        IHDM027:     Female: 45 to 54 years
+        IHDM028:     Female: 55 to 64 years
+        IHDM029:     Female: 65 to 74 years
+        IHDM030:     Female: 75 to 84 years
+        IHDM031:     Female: 85 years and over
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* REDISTRIBUTION: You will not redistribute the data without permission.
+
+  You may publish a subset of the data to meet journal requirements for accessing 
+  data related to a particular publication. Contact us for permission for any other 
+  redistribution; we will consider requests for free and commercial redistribution.
+
+* CITATION: You will cite NHGIS appropriately.
+
+    * Publications and research reports employing NHGIS data (either tabular or GIS) 
+      should include the following citation:
+
+        Steven Manson, Jonathan Schroeder, David Van Riper, and Steven Ruggles. 
+        IPUMS National Historical Geographic Information System: Version 14.0 
+        [Database]. Minneapolis, MN: IPUMS. 2019. 
+        http://doi.org/10.18128/D050.V14.0
+
+    * Publications and research reports employing school attendance areas data 
+      (either tabular or GIS) must cite it appropriately. The citation should 
+      include the following:
+
+        The College of William and Mary and the Minnesota Population Center.
+        School Attendance Boundary Information System (SABINS): Version 1.0.
+        Minneapolis, MN: University of Minnesota 2011.
+
+    * For policy briefs, online resources, or articles in the popular press, we 
+      recommend that you cite the use of NHGIS data as follows:
+
+        IPUMS NHGIS, University of Minnesota, www.nhgis.org.
+
+    * If possible, citations involving school attendance areas should also include
+      the URL for the SABINS site:
+
+        http://www.sabinsdata.org/.
+
+These terms of use are a legally binding agreement. You can use the data only in 
+accordance with these terms, and any other use is a violation of the agreement. 
+Violations may result in revocation of the agreement and prohibition from using other 
+IPUMS data. If IPUMS or our partners are harmed from your violation, you are 
+responsible for all damages, including reasonable attorney's fees and expenses.
+        
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+
+Send electronic material to: nhgis@umn.edu
+
+Printed matter should be sent to:
+
+    IPUMS NHGIS
+    Institute for Social Research and Data Innovation
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455

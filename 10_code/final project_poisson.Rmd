@@ -1,0 +1,383 @@
+---
+title: "Final Project: Cancer Incidence Rate"
+author: "Tzu-Chun Hsieh"
+output: 
+  pdf_document:
+    latex_engine: xelatex
+---
+
+## Summary
+The purpose of this analysis is to identify whether the geographical factors would affect the probability of people contracting cancer. The conclusion shows that the differences in cancer incidence rates among states are statistically significant, controlling for other demographic factors. However, the analysis only offers an overview and fails to reveal what might be the characteristic of the states that cause the variation. Further studies including other factors would be able to examine the exact reason why some states have higher cancer incidence rates.
+
+## Introduction
+Cancer has become one of the most common diseases that modern people would contract during their lifetime. In the United States, cancer is ranked second among the leading causes of death. Though some bad habits such as smoking are known as the causes of cancer, in many cases, no clear reason is responsible for the disease. For example, people who never smoke might get lung cancer as well. This analysis would attempt to identify the geographical factors that may affect the probability of a person contracting cancer. Specifically, the study aims to investigate the following questions:  
+  
+> + Does living in different states affect the possibility of developing cancer?  
+> + Are the states with relatively high cancer incidence rates located in specific areas?  
+
+## Data
+Two data sources are used to obtain sufficient information for this analysis. First, the population data from NHGIS.The population data on the website is obtained directly from the U.S. Census, which is conducted by the United States Census Bureau. The cancer incidence numbers are downloaded from the CDC WONDER. The data is originally provided by the United States Cancer Statistics that obtains the data from cancer registries. The population data set will be combined with the cancer data set on the state, year, age, race, and sex. Moreover, a new column- "Cancer incidence rate" would be added to the data set by calculating the ratio of the incidence number and the population. The final dataset used in the analysis includes 42893 observations. The response variable for the analysis is the cancer incidence rate.
+
+```{r message = FALSE, echo = FALSE}
+rm(list = ls())
+library(lme4) #for the lmer function
+library(lattice)
+library(lmerTest)
+library(ggplot2)
+library(lattice)
+library(rms)
+library(dplyr)
+library(tidyverse)
+library(xtable)
+library(knitr)
+library(gridExtra)
+library(arm)
+library(pROC)
+library(e1071)
+library(caret)
+library(broom)
+library(compiler)
+library(rsvg)
+library(magick)
+library(png)
+```
+
+```{r take a quick look at the data, echo = FALSE}
+df = read.csv('/Users/yu/Documents/Duke/github/stats_final_project/20_intermediate_files/final dataset.csv')
+
+#unique(df$age)
+df$year = factor(df$year, order = TRUE, levels =c(2012,2013,2014,2015,2016))
+df$age = factor(df$age, order = TRUE, levels =c('< 5 years','5-9 years','10-14 years','15-19 years','20-24 years','25-29 years','30-34 years','35-44 years','45-54 years','55-64 years','65-74 years','75-84 years','85+ years'))
+df$inci_r = df$inci / df$pop
+
+df = subset(df, df$state != "Alaska")
+
+#head(df)
+#dim(df)
+#mean(df$inci_r)
+
+#max(df$inci_r)
+#mean(df$inci_r)
+```
+
+#### Code book:
+The codebook for the data set used in this analysis is as follow:
+```{r echo = FALSE}
+ 
+DataDic = rbind(
+  "inci" ="The number of cancer incidence",
+  "inci_r"	= "Cancer incidence rate",
+  "c_site"	= "Leading Cancer site",
+  "pop"	= "Population for the demographic group",
+  "state" = 	"States of United States (except Alaska)",
+  "year" = "From 2012 to 2016",
+  "age"	= "All age",
+  "race"	= "White, Black or African American, Asian or Pacific Islander",
+  "gender" ="1 = female, 0 = male")
+
+knitr::kable(
+ DataDic[,],
+ format = 'markdown',
+ booktabs = T,
+ caption= 'Chi-Square test results',
+ col.names = c("Description")
+)
+
+```
+
+#### Data processing:
+The value of cancer incidence rates is small and the distribution is skewed. Therefore, I tried square root, cube root, and log transformation to improve the distribution towards being a normal distribution. It turns out that log transformation best improved the distribution but there is still a sub-distribution.
+
+```{r echo = FALSE,  fig.height=2, fig.width=4.5, fig.align='center'}
+#gg_inc_rate = ggplot(df, aes(x = inci_r)) + geom_histogram(colour = 'blue', fill ='blue')
+#gg_inc_rate_log = ggplot(df, aes(x = log(inci_r))) + geom_histogram(colour = 'blue', fill ='blue')
+#grid.arrange(gg_inc_rate, gg_inc_rate_log, ncol=2, top = 'Graph1')
+#incidence and incidence rate x predict variables
+gg_res1 = ggplot(df, aes(x = inci_r)) + geom_density()
+gg_res2 = ggplot(df, aes(x = log(inci_r))) + geom_density()
+grid.arrange(gg_res1, gg_res2, ncol=2, top = 'Density of Cancer Incidence Rate')
+```
+
+#### Exploratory data analysis: 
+Based on the initial data analysis, the following is concluded:  
+  
+> + The cancer incidence rate of different cancer sites varies tremendously. Among all types of cancer, breast cancer, lung and bronchus cancer, and prostate cancer are typical cancer types in the United States.  
+> + The cancer incidence rates differ among states. For example, Washington, D.C., has three times of cancer incidence rate compared to other states such as Arizona and Arkansas.  
+> + Cancer is more prevalent in the elderly. The cancer incidence rate approximately doubles between the age group of “45-54 years” old and “55-64 years” old and doubles repeatedly between the age group of “55-64 years” and “65-74 years”.  
+> + The cancer incidence rates seem to have decreased during the 5-year-period. However, the difference in the cancer incidence rates between 2012 and 2016 is only 0.007%.  
+> + Black people are more likely to develop cancer comparing to Asian people and white people.  
+> + Women are approximately 30% less possible to contract cancer than men.  
+
+
+```{r EDA1, echo = FALSE,  fig.height=3.5, fig.width=7, fig.align='center'}
+#ggplot(df,aes(x=age, y=log(inci_r))) + geom_point(alpha = .5,colour="blue4") + geom_smooth(method="lm",col="red3") + labs(title="log(inci_r) vs state") + facet_wrap(~state,ncol=4)
+
+ggplot(aes(y=inci_r, x=c_site), data = df) + geom_boxplot() + ggtitle('Cancer incidence rates by cancer sites') +
+        theme(legend.position = c(0.9, 0.9),
+        legend.title = element_blank(),
+        legend.text = element_text( size = 6),
+        legend.key.size =  unit(0.1, "in"),
+        legend.background = element_rect(fill="transparent", size=0.1),
+        plot.title = element_text(hjust = 0.5,size = 8),
+        strip.text.x = element_text(size=rel(0.8)),
+        strip.text.y = element_text(size=rel(0.8)),
+        axis.title.y = element_text(size = rel(0.8), angle = 0),
+        axis.title.x = element_text(size = rel(0.8), angle = 0),
+        axis.text.y = element_text(size = rel(0.8), angle = 0),
+        axis.text.x = element_text(size = rel(0.8), angle = 90))
+ggplot(aes(y=inci_r, x=state), data = df) + geom_boxplot() + ggtitle('Cancer incidence rates by states') +
+        theme(legend.position = c(0.9, 0.9),
+        legend.title = element_blank(),
+        legend.text = element_text( size = 6),
+        legend.key.size =  unit(0.1, "in"),
+        legend.background = element_rect(fill="transparent", size=0.1),
+        plot.title = element_text(hjust = 0.5,size = 8),
+        strip.text.x = element_text(size=rel(0.8)),
+        strip.text.y = element_text(size=rel(0.8)),
+        axis.title.y = element_text(size = rel(0.8), angle = 0),
+        axis.title.x = element_text(size = rel(0.8), angle = 0),
+        axis.text.y = element_text(size = rel(0.8), angle = 0),
+        axis.text.x = element_text(size = rel(0.8), angle = 90))
+```
+```{r EDA2, echo = FALSE,  fig.height=4.5, fig.width=8, fig.align='center'}
+ggeda_3 = ggplot(aes(y=inci_r,x=age), data = df) + geom_boxplot() + ggtitle('Cancer incidence rates by age') +
+        theme(legend.position = c(0.9, 0.9),
+        legend.title = element_blank(),
+        legend.text = element_text( size = 6),
+        legend.key.size =  unit(0.1, "in"),
+        legend.background = element_rect(fill="transparent", size=0.1),
+        plot.title = element_text(hjust = 0.5,size = 8),
+        strip.text.x = element_text(size=rel(0.8)),
+        strip.text.y = element_text(size=rel(0.8)),
+        axis.title.y = element_text(size = rel(0.8), angle = 0),
+        axis.title.x = element_text(size = rel(0.8), angle = 0),
+        axis.text.y = element_text(size = rel(0.8), angle = 0),
+        axis.text.x = element_text(size = rel(0.8), angle = 90))
+ggeda_4 = ggplot(aes(y=inci_r, x=year), data = df) + geom_boxplot() + ggtitle('Cancer incidence rates by year') +
+        theme(legend.position = c(0.9, 0.9),
+        legend.title = element_blank(),
+        legend.text = element_text( size = 6),
+        legend.key.size =  unit(0.1, "in"),
+        legend.background = element_rect(fill="transparent", size=0.1),
+        plot.title = element_text(hjust = 0.5,size = 8),
+        strip.text.x = element_text(size=rel(0.8)),
+        strip.text.y = element_text(size=rel(0.8)),
+        axis.title.y = element_text(size = rel(0.8), angle = 0),
+        axis.title.x = element_text(size = rel(0.8), angle = 0),
+        axis.text.y = element_text(size = rel(0.8), angle = 0),
+        axis.text.x = element_text(size = rel(0.8), angle = 0))
+ggeda_5 = ggplot(aes(y=inci_r,x=race), data = df) + geom_boxplot() + ggtitle('Cancer incidence rates by race') +
+        theme(legend.position = c(0.9, 0.9),
+        legend.title = element_blank(),
+        legend.text = element_text( size = 6),
+        legend.key.size =  unit(0.1, "in"),
+        legend.background = element_rect(fill="transparent", size=0.1),
+        plot.title = element_text(hjust = 0.5,size = 8),
+        strip.text.x = element_text(size=rel(0.8)),
+        strip.text.y = element_text(size=rel(0.8)),
+        axis.title.y = element_text(size = rel(0.8), angle = 0),
+        axis.title.x = element_text(size = rel(0.8), angle = 0),
+        axis.text.y = element_text(size = rel(0.8), angle = 0),
+        axis.text.x = element_text(size = rel(0.8), angle = 0))
+ggeda_6 = ggplot(aes(y=inci_r,x=sex), data = df) + geom_boxplot() + ggtitle('Cancer incidence rates by gender') +
+        theme(legend.position = c(0.9, 0.9),
+        legend.title = element_blank(),
+        legend.text = element_text( size = 6),
+        legend.key.size =  unit(0.1, "in"),
+        legend.background = element_rect(fill="transparent", size=0.1),
+        plot.title = element_text(hjust = 0.5,size = 8),
+        strip.text.x = element_text(size=rel(0.8)),
+        strip.text.y = element_text(size=rel(0.8)),
+        axis.title.y = element_text(size = rel(0.8), angle = 0),
+        axis.title.x = element_text(size = rel(0.8), angle = 0),
+        axis.text.y = element_text(size = rel(0.8), angle = 0),
+        axis.text.x = element_text(size = rel(0.8), angle = 0))
+
+grid.arrange(ggeda_3, ggeda_4, ggeda_5, ggeda_6, ncol=2)
+```
+
+```{r echo = FALSE, include = FALSE}
+#??? explore interaction term
+#par(mfrow=c(2,1)) 
+boxplot(inci_r~state, subset = sex == 'male', data = df)
+boxplot(inci_r~state, subset = sex == 'female', data = df)
+
+boxplot(inci_r~state, subset = race == 'White', data = df)
+boxplot(inci_r~state, subset = race == 'Black or African American', data = df)
+boxplot(inci_r~state, subset = race == 'Asian or Pacific Islander', data = df)
+
+pairs(log(inci_r)~inci + pop ,data=df)
+
+```
+
+
+## Model
+
+#### Final model:
+The final model for this analysis is as follow:
+$$
+log(pop_{i}＊\hat{inci\_r}_{i}) = \hat{\beta_{0}} + \hat{\beta_{1}}\mathbf{x}_{state\ i} + \hat{\beta_{2}}\mathbf{x}_{c\_site\ i} + \hat{\beta_{3}}\mathbf{x}_{year\ i} + \hat{\beta_{4}}\mathbf{x}_{age\ i} + \hat{\beta_{5}}\mathbf{x}_{race\ i} + \hat{\beta_{6}}\mathbf{x}_{sex\ i} + \hat{\beta_{7}}\mathbf{x}_{c\_site*sex*age\ i} + log(pop_{i})
+$$
+  
+When answering the questions I interested in, I set population as 1 to get the formula for log cancer incidence rates, which is as follow:
+$$
+log(\hat{inci\_r}_{i}) = \hat{\beta_{0}} + \hat{\beta_{1}}\mathbf{x}_{state\ i} + \hat{\beta_{2}}\mathbf{x}_{c\_site\ i} + \hat{\beta_{3}}\mathbf{x}_{year\ i} + \hat{\beta_{4}}\mathbf{x}_{age\ i} + \hat{\beta_{5}}\mathbf{x}_{race\ i} + \hat{\beta_{6}}\mathbf{x}_{sex\ i} + \hat{\beta_{7}}\mathbf{x}_{c\_site*sex*age\ i}
+$$
+```{r echo = FALSE}
+model_poi_final = cglm((pop*inci_r) ~ state + c_site+ year + age + race + sex + c_site*sex*age, data = df, offset = log(pop), family = poisson)
+#model_poi_final = readRDS(file = 'model_poi_final.rds')
+
+cconfint = cmpfun(confint)
+
+#kable(tidy(model_poi_final)[2:50,],digit = 3)
+
+#write.csv(coef_state, file = "coef_state.csv")
+path_out = '/Users/yu/Documents/Duke/github/stats_final_project/20_intermediate_files'
+write.csv(coef_state,paste(path_out,'coef_state.csv',sep = ''))
+
+#stateHawaii = coef_state[coef_state['estimate'] == max(coef_state[,2]),]
+#stateHawaii
+#stateWyoming = coef_state[coef_state['estimate'] == min(coef_state[,2]),]
+#stateWyoming
+#exp(stateHawaii[1,2]) - exp(stateWyoming[1,2])
+```
+  
+*Please refer to the appendix for the full result of the model.
+
+
+#### Model selection:
+
+First, I tried to fit the linear model. I used stepwise with the full model with all predictor variables to fit the model. It turns out that all the predictor variables are included in the model. However, there is a cluster in residual plot. Therefore, I tried the possible interaction term and find the interaction term: cancer sites:sex:age would solve the problem. All the predictor variables in the model with interaction term are all significant. However, the residuals are not randomly scattered. Moreover, the assumption of normality is not followed according to the QQ plot.
+
+```{r model selection- linear model, echo = FALSE, fig.height=4, fig.width=5, fig.align='center'}
+
+#Linear model
+
+#try to use stepwise to fit the linear model. 
+#try all possible interaction term and it turns out that "c-site*sex" affect the residual plot.
+#all the predict variables are significant.
+#nullmodel = lm(log(inci_r) ~ 1, data = df)
+#fullmodel = lm(log(inci_r) ~ state+ c_site + year + age + race + sex + c_site*sex , data = df)
+#failed interaction term: state*c_site / age*race/ state*race/ state*age /state*sex/ c_site*age/ c_site*race/ age*sex/ race*sex
+#in the middle: race*sex
+#potential interaction term: c_site*sex/ c_site*sex*race
+
+#model_lm = step(nullmodel, scope = formula(fullmodel), direction = 'both', trace = 0)
+#saveRDS(model_lm, file= 'model_lm.rds')
+model_lm = readRDS(file= 'model_lm.rds')
+#summary(model_lm)
+
+#However, the residual plot is not evenly scattered.
+#Assumption of normality is not followed as well.
+par(mfrow=c(1,2))
+#plot(model_lm, which = 1:2)
+
+#look at what the data is in the cluster
+#df[fullmodel$residuals < -3,] 
+#df %>% filter(c_site == "Breast") %>%
+#  ggplot(aes(x = inci_r)) + geom_density()
+#These data are from white/ male/ Breast cancer/ over 55 years old ->turn to hierarchical model
+```
+
+Therefore, I try a hierarchical linear model, which level is state, to fix the problem. However, it turns out that the residual plot and qqplot do not change.
+
+```{r model selection- hierarchical model (state), echo = FALSE, fig.height=4, fig.width=5, fig.align='center'}
+#based on the result of linear model, set state as level and put all the other predict variables in the model.
+#because all the effect of predictor variables except state should be the same.
+
+#model_hie = lmer(log(inci_r) ~ c_site+ year + age + race + sex + c_site*sex + (1  | state), data = df) 
+#saveRDS(model_hie, file= 'model_hie.rds')
+model_hie = readRDS(file= 'model_hie.rds')
+#summary(model_hie)
+
+#confint(model)
+#look at the intercepts (and the common slope) for each state
+#coef(model)
+#these equal the fixed effects plus the random effect
+#fixef(model)
+#the difference of intercept among states are relatively obvious?
+#ranef(model)
+#dotplot(ranef(model_hie, condVar=TRUE))     
+
+#AIC BIC is pretty big
+#AIC(model_hie)
+#BIC(model_hie)
+
+#model assesment
+
+#linearity
+#independence of the errors
+#equal variance
+#normality
+
+#model assessment
+#The residuals are not randomly scattered
+#plot(model_hie)
+#The assumption of normality is not followed according to the QQ plot.
+#qqnorm(residuals(model_hie)); qqline(residuals(model_hie))
+```
+
+Finally, I use the Poisson model to solve the normality problem which is caused by the fact that the distribution of log cancer incidence rate is not normally distributed. To fit the Poisson model, I use cancer incidence number as response variables instead. However, by setting the population value as 1, I can get the model use cancer incidence rate as the response variable to answer the questions of this analysis.
+
+```{r model selection- poisson model, echo= FALSE, message=FALSE}
+#https://ids-702-f19.github.io/Course-Website/slides/lec-slides/12-poisson-regression.html#19
+
+cglm = cmpfun(glm)
+
+#model_poi_final = cglm((pop*inci_r) ~ state + c_site+ year + age + race + sex + c_site*sex*age, data = df, offset = log(pop), family = poisson)
+#saveRDS(model_poi_final, file = 'model_poi_final.rds')
+#model_poi_final = readRDS(file = 'model_poi_final.rds')
+#summary(model_poi_final)
+
+model_poi_final_resi <- resid(model_poi_final, type = "pearson")
+model_poi_final_pred <- predict(model_poi_final,type="response")
+
+#residuals vs fitted
+#qplot(y=model_poi_final_resi, x=model_poi_final_pred, data=df, geom="point", xlab = "Predicted Counts", ylab = "Pearson Residuals")
+
+```
+```{r echo= FALSE, include = FALSE}
+#residuals vs predictor variables
+qplot(y=model_poi_final_resi, x=df$c_site, data=df, geom="point",
+      xlab = "cancer sites", ylab = "Pearson Residuals")
+qplot(y=model_poi_final_resi, x=df$state, data=df, geom="point",
+      xlab = "states", ylab = "Pearson Residuals")
+qplot(y=model_poi_final_resi, x=df$year, data=df, geom="point",
+      xlab = "year", ylab = "Pearson Residuals")
+qplot(y=model_poi_final_resi, x=df$age, data=df, geom="point",
+      xlab = "age", ylab = "Pearson Residuals")
+qplot(y=model_poi_final_resi, x=df$race, data=df, geom="point",
+      xlab = "race", ylab = "Pearson Residuals")
+qplot(y=model_poi_final_resi, x=df$sex, data=df, geom="point",
+      xlab = "gender", ylab = "Pearson Residuals")
+
+qplot(y=model_poi_final_resi, x=df$inci, data=df, geom="point",
+      xlab = "incidence numbers", ylab = "Pearson Residuals")
+qplot(y=model_poi_final_resi, x=df$inci_r, data=df, geom="point",
+      xlab = "incidence rates", ylab = "Pearson Residuals")
+qplot(y=model_poi_final_resi, x=df$pop, data=df, geom="point",
+      xlab = "population", ylab = "Pearson Residuals")
+
+#put new interaction term
+#plot residual plot again
+#?compare the MSE between the three models?
+```
+
+#### Results:
+According to the final model, approximately all the predictor variables are statistically significant. People live in different states would have different cancer incidence rates when other factors are controlled. The largest difference is between Hawaii and Wyoming. People live in Hawaii have a 53% greater possibility to develop cancer than people live in Wyoming. Moreover, according to the heat map of the coefficient of all states, generally, people living in states on the east coast are more probably to develop cancer.
+```{r echo = FALSE, fig.height=5, fig.width=6, fig.align='center'}
+map <- readPNG('/Users/yu/Documents/Duke/github/stats_final_project/20_intermediate_files/heat_map.png')
+grid::grid.raster(map)
+#summary(model_poi_final)
+```
+In addition to states, other factors show the same direction of impacts that previously observed in EDA. Male is 30% more possible to develop cancer than women. Moreover, White Americans are 45% more possible to develop cancer while Black Americans are 64% more possible to develop cancer compared to Asian Americans. Furthermore, the coefficients of the interaction term capture the fact that some cancer are more common in specific gender and age.
+
+## Conclusion
+According to the model, living in different states affects the probability of contracting cancer. The differences are statistically significant. However, some of the cancer incidence numbers were discarded when pulling out data from the website because the number is too small for that category, which people might be identified by the data. To protect privacy, these cancer incidence numbers are not available from the data source. In future research, other factors related to the characteristic of the states should be included to explore deep insights on this topic.
+
+\newpage
+## Appendix
+The final poisson model:
+```{r echo=FALSE}
+kable(tidy(model_poi_final),digit = 3)
+```

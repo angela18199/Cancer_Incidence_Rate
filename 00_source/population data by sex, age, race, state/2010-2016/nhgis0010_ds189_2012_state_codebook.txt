@@ -1,0 +1,435 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0010_ds189_2012_state'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Citation and Use
+ 
+Additional documentation on NHGIS data sources is available at: 
+    https://www.nhgis.org/documentation/tabular-data 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Year:             2012
+Geographic level: State
+Dataset:          2012 American Community Survey: 1-Year Data
+   NHGIS code:    2012_ACS1
+   NHGIS ID:      ds189
+Breakdown(s):     Geographic Subarea:
+                     Total area (00)
+Data type(s):     (E) Estimates
+                  (M) Margins of error
+ 
+Tables:
+ 
+1. Sex by Age (White Alone)
+   Universe:    People who are White alone
+   Source code: B01001A
+   NHGIS code:  OIM
+ 
+2. Sex by Age (Black or African American Alone)
+   Universe:    Black or African American alone
+   Source code: B01001B
+   NHGIS code:  OIO
+ 
+3. Sex by Age (Asian Alone)
+   Universe:    People who are Asian alone
+   Source code: B01001D
+   NHGIS code:  OIS
+ 
+4. Sex by Age (Native Hawaiian and Other Pacific Islander Alone)
+   Universe:    People who are Native Hawaiian and Other Pacific Islander alone
+   Source code: B01001E
+   NHGIS code:  OIU
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Data File Year
+        REGIONA:     Region Code
+        DIVISIONA:   Division Code
+        STATE:       State Name
+        STATEA:      State Code
+        COUNTYA:     County Code
+        COUSUBA:     County Subdivision Code
+        PLACEA:      Place Code
+        AIANHHA:     American Indian Area/Alaska Native Area/Hawaiian Home Land Code
+        ANRCA:       Alaska Native Regional Corporation Code
+        CBSAA:       Metropolitan Statistical Area/Micropolitan Statistical Area Code
+        CSAA:        Combined Statistical Area Code
+        METDIVA:     Metropolitan Division Code
+        NECTAA:      New England City and Town Area Code
+        CNECTAA:     Combined New England City and Town Area Code
+        NECTADIVA:   New England City and Town Area Division Code
+        UAA:         Urban Area Code
+        CDCURRA:     Congressional District (2013-2015, 113th Congress) Code
+        SDELMA:      School District (Elementary)/Remainder Code
+        SDSECA:      School District (Secondary)/Remainder Code
+        SDUNIA:      School District (Unified)/Remainder Code
+        PUMA5A:      Public Use Microdata Sample Area (PUMA) Code
+ 
+Data Type (E):
+    Estimates
+ 
+        NAME_E:      Area Name
+ 
+    Table 1:     Sex by Age (White Alone)
+    Universe:    People who are White alone
+    Source code: B01001A
+    NHGIS code:  OIM
+        OIME001:     Total
+        OIME002:     Male
+        OIME003:     Male: Under 5 years
+        OIME004:     Male: 5 to 9 years
+        OIME005:     Male: 10 to 14 years
+        OIME006:     Male: 15 to 17 years
+        OIME007:     Male: 18 and 19 years
+        OIME008:     Male: 20 to 24 years
+        OIME009:     Male: 25 to 29 years
+        OIME010:     Male: 30 to 34 years
+        OIME011:     Male: 35 to 44 years
+        OIME012:     Male: 45 to 54 years
+        OIME013:     Male: 55 to 64 years
+        OIME014:     Male: 65 to 74 years
+        OIME015:     Male: 75 to 84 years
+        OIME016:     Male: 85 years and over
+        OIME017:     Female
+        OIME018:     Female: Under 5 years
+        OIME019:     Female: 5 to 9 years
+        OIME020:     Female: 10 to 14 years
+        OIME021:     Female: 15 to 17 years
+        OIME022:     Female: 18 and 19 years
+        OIME023:     Female: 20 to 24 years
+        OIME024:     Female: 25 to 29 years
+        OIME025:     Female: 30 to 34 years
+        OIME026:     Female: 35 to 44 years
+        OIME027:     Female: 45 to 54 years
+        OIME028:     Female: 55 to 64 years
+        OIME029:     Female: 65 to 74 years
+        OIME030:     Female: 75 to 84 years
+        OIME031:     Female: 85 years and over
+ 
+    Table 2:     Sex by Age (Black or African American Alone)
+    Universe:    Black or African American alone
+    Source code: B01001B
+    NHGIS code:  OIO
+        OIOE001:     Total
+        OIOE002:     Male
+        OIOE003:     Male: Under 5 years
+        OIOE004:     Male: 5 to 9 years
+        OIOE005:     Male: 10 to 14 years
+        OIOE006:     Male: 15 to 17 years
+        OIOE007:     Male: 18 and 19 years
+        OIOE008:     Male: 20 to 24 years
+        OIOE009:     Male: 25 to 29 years
+        OIOE010:     Male: 30 to 34 years
+        OIOE011:     Male: 35 to 44 years
+        OIOE012:     Male: 45 to 54 years
+        OIOE013:     Male: 55 to 64 years
+        OIOE014:     Male: 65 to 74 years
+        OIOE015:     Male: 75 to 84 years
+        OIOE016:     Male: 85 years and over
+        OIOE017:     Female
+        OIOE018:     Female: Under 5 years
+        OIOE019:     Female: 5 to 9 years
+        OIOE020:     Female: 10 to 14 years
+        OIOE021:     Female: 15 to 17 years
+        OIOE022:     Female: 18 and 19 years
+        OIOE023:     Female: 20 to 24 years
+        OIOE024:     Female: 25 to 29 years
+        OIOE025:     Female: 30 to 34 years
+        OIOE026:     Female: 35 to 44 years
+        OIOE027:     Female: 45 to 54 years
+        OIOE028:     Female: 55 to 64 years
+        OIOE029:     Female: 65 to 74 years
+        OIOE030:     Female: 75 to 84 years
+        OIOE031:     Female: 85 years and over
+ 
+    Table 3:     Sex by Age (Asian Alone)
+    Universe:    People who are Asian alone
+    Source code: B01001D
+    NHGIS code:  OIS
+        OISE001:     Total
+        OISE002:     Male
+        OISE003:     Male: Under 5 years
+        OISE004:     Male: 5 to 9 years
+        OISE005:     Male: 10 to 14 years
+        OISE006:     Male: 15 to 17 years
+        OISE007:     Male: 18 and 19 years
+        OISE008:     Male: 20 to 24 years
+        OISE009:     Male: 25 to 29 years
+        OISE010:     Male: 30 to 34 years
+        OISE011:     Male: 35 to 44 years
+        OISE012:     Male: 45 to 54 years
+        OISE013:     Male: 55 to 64 years
+        OISE014:     Male: 65 to 74 years
+        OISE015:     Male: 75 to 84 years
+        OISE016:     Male: 85 years and over
+        OISE017:     Female
+        OISE018:     Female: Under 5 years
+        OISE019:     Female: 5 to 9 years
+        OISE020:     Female: 10 to 14 years
+        OISE021:     Female: 15 to 17 years
+        OISE022:     Female: 18 and 19 years
+        OISE023:     Female: 20 to 24 years
+        OISE024:     Female: 25 to 29 years
+        OISE025:     Female: 30 to 34 years
+        OISE026:     Female: 35 to 44 years
+        OISE027:     Female: 45 to 54 years
+        OISE028:     Female: 55 to 64 years
+        OISE029:     Female: 65 to 74 years
+        OISE030:     Female: 75 to 84 years
+        OISE031:     Female: 85 years and over
+ 
+    Table 4:     Sex by Age (Native Hawaiian and Other Pacific Islander Alone)
+    Universe:    People who are Native Hawaiian and Other Pacific Islander alone
+    Source code: B01001E
+    NHGIS code:  OIU
+        OIUE001:     Total
+        OIUE002:     Male
+        OIUE003:     Male: Under 5 years
+        OIUE004:     Male: 5 to 9 years
+        OIUE005:     Male: 10 to 14 years
+        OIUE006:     Male: 15 to 17 years
+        OIUE007:     Male: 18 and 19 years
+        OIUE008:     Male: 20 to 24 years
+        OIUE009:     Male: 25 to 29 years
+        OIUE010:     Male: 30 to 34 years
+        OIUE011:     Male: 35 to 44 years
+        OIUE012:     Male: 45 to 54 years
+        OIUE013:     Male: 55 to 64 years
+        OIUE014:     Male: 65 to 74 years
+        OIUE015:     Male: 75 to 84 years
+        OIUE016:     Male: 85 years and over
+        OIUE017:     Female
+        OIUE018:     Female: Under 5 years
+        OIUE019:     Female: 5 to 9 years
+        OIUE020:     Female: 10 to 14 years
+        OIUE021:     Female: 15 to 17 years
+        OIUE022:     Female: 18 and 19 years
+        OIUE023:     Female: 20 to 24 years
+        OIUE024:     Female: 25 to 29 years
+        OIUE025:     Female: 30 to 34 years
+        OIUE026:     Female: 35 to 44 years
+        OIUE027:     Female: 45 to 54 years
+        OIUE028:     Female: 55 to 64 years
+        OIUE029:     Female: 65 to 74 years
+        OIUE030:     Female: 75 to 84 years
+        OIUE031:     Female: 85 years and over
+ 
+Data Type (M):
+    Margins of error
+ 
+        NAME_M:      Area Name
+ 
+    Table 1:     Sex by Age (White Alone)
+    Universe:    People who are White alone
+    Source code: B01001A
+    NHGIS code:  OIM
+        OIMM001:     Total
+        OIMM002:     Male
+        OIMM003:     Male: Under 5 years
+        OIMM004:     Male: 5 to 9 years
+        OIMM005:     Male: 10 to 14 years
+        OIMM006:     Male: 15 to 17 years
+        OIMM007:     Male: 18 and 19 years
+        OIMM008:     Male: 20 to 24 years
+        OIMM009:     Male: 25 to 29 years
+        OIMM010:     Male: 30 to 34 years
+        OIMM011:     Male: 35 to 44 years
+        OIMM012:     Male: 45 to 54 years
+        OIMM013:     Male: 55 to 64 years
+        OIMM014:     Male: 65 to 74 years
+        OIMM015:     Male: 75 to 84 years
+        OIMM016:     Male: 85 years and over
+        OIMM017:     Female
+        OIMM018:     Female: Under 5 years
+        OIMM019:     Female: 5 to 9 years
+        OIMM020:     Female: 10 to 14 years
+        OIMM021:     Female: 15 to 17 years
+        OIMM022:     Female: 18 and 19 years
+        OIMM023:     Female: 20 to 24 years
+        OIMM024:     Female: 25 to 29 years
+        OIMM025:     Female: 30 to 34 years
+        OIMM026:     Female: 35 to 44 years
+        OIMM027:     Female: 45 to 54 years
+        OIMM028:     Female: 55 to 64 years
+        OIMM029:     Female: 65 to 74 years
+        OIMM030:     Female: 75 to 84 years
+        OIMM031:     Female: 85 years and over
+ 
+    Table 2:     Sex by Age (Black or African American Alone)
+    Universe:    Black or African American alone
+    Source code: B01001B
+    NHGIS code:  OIO
+        OIOM001:     Total
+        OIOM002:     Male
+        OIOM003:     Male: Under 5 years
+        OIOM004:     Male: 5 to 9 years
+        OIOM005:     Male: 10 to 14 years
+        OIOM006:     Male: 15 to 17 years
+        OIOM007:     Male: 18 and 19 years
+        OIOM008:     Male: 20 to 24 years
+        OIOM009:     Male: 25 to 29 years
+        OIOM010:     Male: 30 to 34 years
+        OIOM011:     Male: 35 to 44 years
+        OIOM012:     Male: 45 to 54 years
+        OIOM013:     Male: 55 to 64 years
+        OIOM014:     Male: 65 to 74 years
+        OIOM015:     Male: 75 to 84 years
+        OIOM016:     Male: 85 years and over
+        OIOM017:     Female
+        OIOM018:     Female: Under 5 years
+        OIOM019:     Female: 5 to 9 years
+        OIOM020:     Female: 10 to 14 years
+        OIOM021:     Female: 15 to 17 years
+        OIOM022:     Female: 18 and 19 years
+        OIOM023:     Female: 20 to 24 years
+        OIOM024:     Female: 25 to 29 years
+        OIOM025:     Female: 30 to 34 years
+        OIOM026:     Female: 35 to 44 years
+        OIOM027:     Female: 45 to 54 years
+        OIOM028:     Female: 55 to 64 years
+        OIOM029:     Female: 65 to 74 years
+        OIOM030:     Female: 75 to 84 years
+        OIOM031:     Female: 85 years and over
+ 
+    Table 3:     Sex by Age (Asian Alone)
+    Universe:    People who are Asian alone
+    Source code: B01001D
+    NHGIS code:  OIS
+        OISM001:     Total
+        OISM002:     Male
+        OISM003:     Male: Under 5 years
+        OISM004:     Male: 5 to 9 years
+        OISM005:     Male: 10 to 14 years
+        OISM006:     Male: 15 to 17 years
+        OISM007:     Male: 18 and 19 years
+        OISM008:     Male: 20 to 24 years
+        OISM009:     Male: 25 to 29 years
+        OISM010:     Male: 30 to 34 years
+        OISM011:     Male: 35 to 44 years
+        OISM012:     Male: 45 to 54 years
+        OISM013:     Male: 55 to 64 years
+        OISM014:     Male: 65 to 74 years
+        OISM015:     Male: 75 to 84 years
+        OISM016:     Male: 85 years and over
+        OISM017:     Female
+        OISM018:     Female: Under 5 years
+        OISM019:     Female: 5 to 9 years
+        OISM020:     Female: 10 to 14 years
+        OISM021:     Female: 15 to 17 years
+        OISM022:     Female: 18 and 19 years
+        OISM023:     Female: 20 to 24 years
+        OISM024:     Female: 25 to 29 years
+        OISM025:     Female: 30 to 34 years
+        OISM026:     Female: 35 to 44 years
+        OISM027:     Female: 45 to 54 years
+        OISM028:     Female: 55 to 64 years
+        OISM029:     Female: 65 to 74 years
+        OISM030:     Female: 75 to 84 years
+        OISM031:     Female: 85 years and over
+ 
+    Table 4:     Sex by Age (Native Hawaiian and Other Pacific Islander Alone)
+    Universe:    People who are Native Hawaiian and Other Pacific Islander alone
+    Source code: B01001E
+    NHGIS code:  OIU
+        OIUM001:     Total
+        OIUM002:     Male
+        OIUM003:     Male: Under 5 years
+        OIUM004:     Male: 5 to 9 years
+        OIUM005:     Male: 10 to 14 years
+        OIUM006:     Male: 15 to 17 years
+        OIUM007:     Male: 18 and 19 years
+        OIUM008:     Male: 20 to 24 years
+        OIUM009:     Male: 25 to 29 years
+        OIUM010:     Male: 30 to 34 years
+        OIUM011:     Male: 35 to 44 years
+        OIUM012:     Male: 45 to 54 years
+        OIUM013:     Male: 55 to 64 years
+        OIUM014:     Male: 65 to 74 years
+        OIUM015:     Male: 75 to 84 years
+        OIUM016:     Male: 85 years and over
+        OIUM017:     Female
+        OIUM018:     Female: Under 5 years
+        OIUM019:     Female: 5 to 9 years
+        OIUM020:     Female: 10 to 14 years
+        OIUM021:     Female: 15 to 17 years
+        OIUM022:     Female: 18 and 19 years
+        OIUM023:     Female: 20 to 24 years
+        OIUM024:     Female: 25 to 29 years
+        OIUM025:     Female: 30 to 34 years
+        OIUM026:     Female: 35 to 44 years
+        OIUM027:     Female: 45 to 54 years
+        OIUM028:     Female: 55 to 64 years
+        OIUM029:     Female: 65 to 74 years
+        OIUM030:     Female: 75 to 84 years
+        OIUM031:     Female: 85 years and over
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* REDISTRIBUTION: You will not redistribute the data without permission.
+
+  You may publish a subset of the data to meet journal requirements for accessing 
+  data related to a particular publication. Contact us for permission for any other 
+  redistribution; we will consider requests for free and commercial redistribution.
+
+* CITATION: You will cite NHGIS appropriately.
+
+    * Publications and research reports employing NHGIS data (either tabular or GIS) 
+      should include the following citation:
+
+        Steven Manson, Jonathan Schroeder, David Van Riper, and Steven Ruggles. 
+        IPUMS National Historical Geographic Information System: Version 14.0 
+        [Database]. Minneapolis, MN: IPUMS. 2019. 
+        http://doi.org/10.18128/D050.V14.0
+
+    * Publications and research reports employing school attendance areas data 
+      (either tabular or GIS) must cite it appropriately. The citation should 
+      include the following:
+
+        The College of William and Mary and the Minnesota Population Center.
+        School Attendance Boundary Information System (SABINS): Version 1.0.
+        Minneapolis, MN: University of Minnesota 2011.
+
+    * For policy briefs, online resources, or articles in the popular press, we 
+      recommend that you cite the use of NHGIS data as follows:
+
+        IPUMS NHGIS, University of Minnesota, www.nhgis.org.
+
+    * If possible, citations involving school attendance areas should also include
+      the URL for the SABINS site:
+
+        http://www.sabinsdata.org/.
+
+These terms of use are a legally binding agreement. You can use the data only in 
+accordance with these terms, and any other use is a violation of the agreement. 
+Violations may result in revocation of the agreement and prohibition from using other 
+IPUMS data. If IPUMS or our partners are harmed from your violation, you are 
+responsible for all damages, including reasonable attorney's fees and expenses.
+        
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+
+Send electronic material to: nhgis@umn.edu
+
+Printed matter should be sent to:
+
+    IPUMS NHGIS
+    Institute for Social Research and Data Innovation
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455

@@ -1,0 +1,435 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0010_ds183_2011_state'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Citation and Use
+ 
+Additional documentation on NHGIS data sources is available at: 
+    https://www.nhgis.org/documentation/tabular-data 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Year:             2011
+Geographic level: State
+Dataset:          2011 American Community Survey: 1-Year Data
+   NHGIS code:    2011_ACS1
+   NHGIS ID:      ds183
+Breakdown(s):     Geographic Subarea:
+                     Total area (00)
+Data type(s):     (E) Estimates
+                  (M) Margins of error
+ 
+Tables:
+ 
+1. Sex by Age (White Alone)
+   Universe:    People who are White alone
+   Source code: B01001A
+   NHGIS code:  LIJ
+ 
+2. Sex by Age (Black or African American Alone)
+   Universe:    Black or African American alone
+   Source code: B01001B
+   NHGIS code:  LIL
+ 
+3. Sex by Age (Asian Alone)
+   Universe:    People who are Asian alone
+   Source code: B01001D
+   NHGIS code:  LIP
+ 
+4. Sex by Age (Native Hawaiian and Other Pacific Islander Alone)
+   Universe:    People who are Native Hawaiian and Other Pacific Islander alone
+   Source code: B01001E
+   NHGIS code:  LIR
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Data File Year
+        REGIONA:     Region Code
+        DIVISIONA:   Division Code
+        STATE:       State Name
+        STATEA:      State Code
+        COUNTYA:     County Code
+        COUSUBA:     County Subdivision Code
+        PLACEA:      Place Code
+        AIANHHA:     American Indian Area/Alaska Native Area/Hawaiian Home Land Code
+        ANRCA:       Alaska Native Regional Corporation Code
+        CBSAA:       Metropolitan Statistical Area/Micropolitan Statistical Area Code
+        CSAA:        Combined Statistical Area Code
+        METDIVA:     Metropolitan Division Code
+        NECTAA:      New England City and Town Area Code
+        CNECTAA:     Combined New England City and Town Area Code
+        NECTADIVA:   New England City and Town Area Division Code
+        UAA:         Urban Area Code
+        CDCURRA:     Congressional District (111th Congress) Code
+        SDELMA:      School District (Elementary)/Remainder Code
+        SDSECA:      School District (Secondary)/Remainder Code
+        SDUNIA:      School District (Unified)/Remainder Code
+        PUMA5A:      Public Use Microdata Sample Area (PUMA) Code
+ 
+Data Type (E):
+    Estimates
+ 
+        NAME_E:      Area Name
+ 
+    Table 1:     Sex by Age (White Alone)
+    Universe:    People who are White alone
+    Source code: B01001A
+    NHGIS code:  LIJ
+        LIJE001:     Total
+        LIJE002:     Male
+        LIJE003:     Male: Under 5 years
+        LIJE004:     Male: 5 to 9 years
+        LIJE005:     Male: 10 to 14 years
+        LIJE006:     Male: 15 to 17 years
+        LIJE007:     Male: 18 and 19 years
+        LIJE008:     Male: 20 to 24 years
+        LIJE009:     Male: 25 to 29 years
+        LIJE010:     Male: 30 to 34 years
+        LIJE011:     Male: 35 to 44 years
+        LIJE012:     Male: 45 to 54 years
+        LIJE013:     Male: 55 to 64 years
+        LIJE014:     Male: 65 to 74 years
+        LIJE015:     Male: 75 to 84 years
+        LIJE016:     Male: 85 years and over
+        LIJE017:     Female
+        LIJE018:     Female: Under 5 years
+        LIJE019:     Female: 5 to 9 years
+        LIJE020:     Female: 10 to 14 years
+        LIJE021:     Female: 15 to 17 years
+        LIJE022:     Female: 18 and 19 years
+        LIJE023:     Female: 20 to 24 years
+        LIJE024:     Female: 25 to 29 years
+        LIJE025:     Female: 30 to 34 years
+        LIJE026:     Female: 35 to 44 years
+        LIJE027:     Female: 45 to 54 years
+        LIJE028:     Female: 55 to 64 years
+        LIJE029:     Female: 65 to 74 years
+        LIJE030:     Female: 75 to 84 years
+        LIJE031:     Female: 85 years and over
+ 
+    Table 2:     Sex by Age (Black or African American Alone)
+    Universe:    Black or African American alone
+    Source code: B01001B
+    NHGIS code:  LIL
+        LILE001:     Total
+        LILE002:     Male
+        LILE003:     Male: Under 5 years
+        LILE004:     Male: 5 to 9 years
+        LILE005:     Male: 10 to 14 years
+        LILE006:     Male: 15 to 17 years
+        LILE007:     Male: 18 and 19 years
+        LILE008:     Male: 20 to 24 years
+        LILE009:     Male: 25 to 29 years
+        LILE010:     Male: 30 to 34 years
+        LILE011:     Male: 35 to 44 years
+        LILE012:     Male: 45 to 54 years
+        LILE013:     Male: 55 to 64 years
+        LILE014:     Male: 65 to 74 years
+        LILE015:     Male: 75 to 84 years
+        LILE016:     Male: 85 years and over
+        LILE017:     Female
+        LILE018:     Female: Under 5 years
+        LILE019:     Female: 5 to 9 years
+        LILE020:     Female: 10 to 14 years
+        LILE021:     Female: 15 to 17 years
+        LILE022:     Female: 18 and 19 years
+        LILE023:     Female: 20 to 24 years
+        LILE024:     Female: 25 to 29 years
+        LILE025:     Female: 30 to 34 years
+        LILE026:     Female: 35 to 44 years
+        LILE027:     Female: 45 to 54 years
+        LILE028:     Female: 55 to 64 years
+        LILE029:     Female: 65 to 74 years
+        LILE030:     Female: 75 to 84 years
+        LILE031:     Female: 85 years and over
+ 
+    Table 3:     Sex by Age (Asian Alone)
+    Universe:    People who are Asian alone
+    Source code: B01001D
+    NHGIS code:  LIP
+        LIPE001:     Total
+        LIPE002:     Male
+        LIPE003:     Male: Under 5 years
+        LIPE004:     Male: 5 to 9 years
+        LIPE005:     Male: 10 to 14 years
+        LIPE006:     Male: 15 to 17 years
+        LIPE007:     Male: 18 and 19 years
+        LIPE008:     Male: 20 to 24 years
+        LIPE009:     Male: 25 to 29 years
+        LIPE010:     Male: 30 to 34 years
+        LIPE011:     Male: 35 to 44 years
+        LIPE012:     Male: 45 to 54 years
+        LIPE013:     Male: 55 to 64 years
+        LIPE014:     Male: 65 to 74 years
+        LIPE015:     Male: 75 to 84 years
+        LIPE016:     Male: 85 years and over
+        LIPE017:     Female
+        LIPE018:     Female: Under 5 years
+        LIPE019:     Female: 5 to 9 years
+        LIPE020:     Female: 10 to 14 years
+        LIPE021:     Female: 15 to 17 years
+        LIPE022:     Female: 18 and 19 years
+        LIPE023:     Female: 20 to 24 years
+        LIPE024:     Female: 25 to 29 years
+        LIPE025:     Female: 30 to 34 years
+        LIPE026:     Female: 35 to 44 years
+        LIPE027:     Female: 45 to 54 years
+        LIPE028:     Female: 55 to 64 years
+        LIPE029:     Female: 65 to 74 years
+        LIPE030:     Female: 75 to 84 years
+        LIPE031:     Female: 85 years and over
+ 
+    Table 4:     Sex by Age (Native Hawaiian and Other Pacific Islander Alone)
+    Universe:    People who are Native Hawaiian and Other Pacific Islander alone
+    Source code: B01001E
+    NHGIS code:  LIR
+        LIRE001:     Total
+        LIRE002:     Male
+        LIRE003:     Male: Under 5 years
+        LIRE004:     Male: 5 to 9 years
+        LIRE005:     Male: 10 to 14 years
+        LIRE006:     Male: 15 to 17 years
+        LIRE007:     Male: 18 and 19 years
+        LIRE008:     Male: 20 to 24 years
+        LIRE009:     Male: 25 to 29 years
+        LIRE010:     Male: 30 to 34 years
+        LIRE011:     Male: 35 to 44 years
+        LIRE012:     Male: 45 to 54 years
+        LIRE013:     Male: 55 to 64 years
+        LIRE014:     Male: 65 to 74 years
+        LIRE015:     Male: 75 to 84 years
+        LIRE016:     Male: 85 years and over
+        LIRE017:     Female
+        LIRE018:     Female: Under 5 years
+        LIRE019:     Female: 5 to 9 years
+        LIRE020:     Female: 10 to 14 years
+        LIRE021:     Female: 15 to 17 years
+        LIRE022:     Female: 18 and 19 years
+        LIRE023:     Female: 20 to 24 years
+        LIRE024:     Female: 25 to 29 years
+        LIRE025:     Female: 30 to 34 years
+        LIRE026:     Female: 35 to 44 years
+        LIRE027:     Female: 45 to 54 years
+        LIRE028:     Female: 55 to 64 years
+        LIRE029:     Female: 65 to 74 years
+        LIRE030:     Female: 75 to 84 years
+        LIRE031:     Female: 85 years and over
+ 
+Data Type (M):
+    Margins of error
+ 
+        NAME_M:      Area Name
+ 
+    Table 1:     Sex by Age (White Alone)
+    Universe:    People who are White alone
+    Source code: B01001A
+    NHGIS code:  LIJ
+        LIJM001:     Total
+        LIJM002:     Male
+        LIJM003:     Male: Under 5 years
+        LIJM004:     Male: 5 to 9 years
+        LIJM005:     Male: 10 to 14 years
+        LIJM006:     Male: 15 to 17 years
+        LIJM007:     Male: 18 and 19 years
+        LIJM008:     Male: 20 to 24 years
+        LIJM009:     Male: 25 to 29 years
+        LIJM010:     Male: 30 to 34 years
+        LIJM011:     Male: 35 to 44 years
+        LIJM012:     Male: 45 to 54 years
+        LIJM013:     Male: 55 to 64 years
+        LIJM014:     Male: 65 to 74 years
+        LIJM015:     Male: 75 to 84 years
+        LIJM016:     Male: 85 years and over
+        LIJM017:     Female
+        LIJM018:     Female: Under 5 years
+        LIJM019:     Female: 5 to 9 years
+        LIJM020:     Female: 10 to 14 years
+        LIJM021:     Female: 15 to 17 years
+        LIJM022:     Female: 18 and 19 years
+        LIJM023:     Female: 20 to 24 years
+        LIJM024:     Female: 25 to 29 years
+        LIJM025:     Female: 30 to 34 years
+        LIJM026:     Female: 35 to 44 years
+        LIJM027:     Female: 45 to 54 years
+        LIJM028:     Female: 55 to 64 years
+        LIJM029:     Female: 65 to 74 years
+        LIJM030:     Female: 75 to 84 years
+        LIJM031:     Female: 85 years and over
+ 
+    Table 2:     Sex by Age (Black or African American Alone)
+    Universe:    Black or African American alone
+    Source code: B01001B
+    NHGIS code:  LIL
+        LILM001:     Total
+        LILM002:     Male
+        LILM003:     Male: Under 5 years
+        LILM004:     Male: 5 to 9 years
+        LILM005:     Male: 10 to 14 years
+        LILM006:     Male: 15 to 17 years
+        LILM007:     Male: 18 and 19 years
+        LILM008:     Male: 20 to 24 years
+        LILM009:     Male: 25 to 29 years
+        LILM010:     Male: 30 to 34 years
+        LILM011:     Male: 35 to 44 years
+        LILM012:     Male: 45 to 54 years
+        LILM013:     Male: 55 to 64 years
+        LILM014:     Male: 65 to 74 years
+        LILM015:     Male: 75 to 84 years
+        LILM016:     Male: 85 years and over
+        LILM017:     Female
+        LILM018:     Female: Under 5 years
+        LILM019:     Female: 5 to 9 years
+        LILM020:     Female: 10 to 14 years
+        LILM021:     Female: 15 to 17 years
+        LILM022:     Female: 18 and 19 years
+        LILM023:     Female: 20 to 24 years
+        LILM024:     Female: 25 to 29 years
+        LILM025:     Female: 30 to 34 years
+        LILM026:     Female: 35 to 44 years
+        LILM027:     Female: 45 to 54 years
+        LILM028:     Female: 55 to 64 years
+        LILM029:     Female: 65 to 74 years
+        LILM030:     Female: 75 to 84 years
+        LILM031:     Female: 85 years and over
+ 
+    Table 3:     Sex by Age (Asian Alone)
+    Universe:    People who are Asian alone
+    Source code: B01001D
+    NHGIS code:  LIP
+        LIPM001:     Total
+        LIPM002:     Male
+        LIPM003:     Male: Under 5 years
+        LIPM004:     Male: 5 to 9 years
+        LIPM005:     Male: 10 to 14 years
+        LIPM006:     Male: 15 to 17 years
+        LIPM007:     Male: 18 and 19 years
+        LIPM008:     Male: 20 to 24 years
+        LIPM009:     Male: 25 to 29 years
+        LIPM010:     Male: 30 to 34 years
+        LIPM011:     Male: 35 to 44 years
+        LIPM012:     Male: 45 to 54 years
+        LIPM013:     Male: 55 to 64 years
+        LIPM014:     Male: 65 to 74 years
+        LIPM015:     Male: 75 to 84 years
+        LIPM016:     Male: 85 years and over
+        LIPM017:     Female
+        LIPM018:     Female: Under 5 years
+        LIPM019:     Female: 5 to 9 years
+        LIPM020:     Female: 10 to 14 years
+        LIPM021:     Female: 15 to 17 years
+        LIPM022:     Female: 18 and 19 years
+        LIPM023:     Female: 20 to 24 years
+        LIPM024:     Female: 25 to 29 years
+        LIPM025:     Female: 30 to 34 years
+        LIPM026:     Female: 35 to 44 years
+        LIPM027:     Female: 45 to 54 years
+        LIPM028:     Female: 55 to 64 years
+        LIPM029:     Female: 65 to 74 years
+        LIPM030:     Female: 75 to 84 years
+        LIPM031:     Female: 85 years and over
+ 
+    Table 4:     Sex by Age (Native Hawaiian and Other Pacific Islander Alone)
+    Universe:    People who are Native Hawaiian and Other Pacific Islander alone
+    Source code: B01001E
+    NHGIS code:  LIR
+        LIRM001:     Total
+        LIRM002:     Male
+        LIRM003:     Male: Under 5 years
+        LIRM004:     Male: 5 to 9 years
+        LIRM005:     Male: 10 to 14 years
+        LIRM006:     Male: 15 to 17 years
+        LIRM007:     Male: 18 and 19 years
+        LIRM008:     Male: 20 to 24 years
+        LIRM009:     Male: 25 to 29 years
+        LIRM010:     Male: 30 to 34 years
+        LIRM011:     Male: 35 to 44 years
+        LIRM012:     Male: 45 to 54 years
+        LIRM013:     Male: 55 to 64 years
+        LIRM014:     Male: 65 to 74 years
+        LIRM015:     Male: 75 to 84 years
+        LIRM016:     Male: 85 years and over
+        LIRM017:     Female
+        LIRM018:     Female: Under 5 years
+        LIRM019:     Female: 5 to 9 years
+        LIRM020:     Female: 10 to 14 years
+        LIRM021:     Female: 15 to 17 years
+        LIRM022:     Female: 18 and 19 years
+        LIRM023:     Female: 20 to 24 years
+        LIRM024:     Female: 25 to 29 years
+        LIRM025:     Female: 30 to 34 years
+        LIRM026:     Female: 35 to 44 years
+        LIRM027:     Female: 45 to 54 years
+        LIRM028:     Female: 55 to 64 years
+        LIRM029:     Female: 65 to 74 years
+        LIRM030:     Female: 75 to 84 years
+        LIRM031:     Female: 85 years and over
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* REDISTRIBUTION: You will not redistribute the data without permission.
+
+  You may publish a subset of the data to meet journal requirements for accessing 
+  data related to a particular publication. Contact us for permission for any other 
+  redistribution; we will consider requests for free and commercial redistribution.
+
+* CITATION: You will cite NHGIS appropriately.
+
+    * Publications and research reports employing NHGIS data (either tabular or GIS) 
+      should include the following citation:
+
+        Steven Manson, Jonathan Schroeder, David Van Riper, and Steven Ruggles. 
+        IPUMS National Historical Geographic Information System: Version 14.0 
+        [Database]. Minneapolis, MN: IPUMS. 2019. 
+        http://doi.org/10.18128/D050.V14.0
+
+    * Publications and research reports employing school attendance areas data 
+      (either tabular or GIS) must cite it appropriately. The citation should 
+      include the following:
+
+        The College of William and Mary and the Minnesota Population Center.
+        School Attendance Boundary Information System (SABINS): Version 1.0.
+        Minneapolis, MN: University of Minnesota 2011.
+
+    * For policy briefs, online resources, or articles in the popular press, we 
+      recommend that you cite the use of NHGIS data as follows:
+
+        IPUMS NHGIS, University of Minnesota, www.nhgis.org.
+
+    * If possible, citations involving school attendance areas should also include
+      the URL for the SABINS site:
+
+        http://www.sabinsdata.org/.
+
+These terms of use are a legally binding agreement. You can use the data only in 
+accordance with these terms, and any other use is a violation of the agreement. 
+Violations may result in revocation of the agreement and prohibition from using other 
+IPUMS data. If IPUMS or our partners are harmed from your violation, you are 
+responsible for all damages, including reasonable attorney's fees and expenses.
+        
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+
+Send electronic material to: nhgis@umn.edu
+
+Printed matter should be sent to:
+
+    IPUMS NHGIS
+    Institute for Social Research and Data Innovation
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455

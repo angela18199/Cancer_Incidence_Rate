@@ -1,0 +1,50 @@
+"","term","estimate"
+"1","stateArizona",-0.143945883419084
+"2","stateArkansas",0.0297358637279546
+"3","stateCalifornia",0.00704954101576691
+"4","stateColorado",-0.120549753762003
+"5","stateConnecticut",0.0579136425337289
+"6","stateDelaware",0.116642705453397
+"7","stateDistrict of Columbia",-0.0465535545519233
+"8","stateFlorida",-0.0364838868273829
+"9","stateGeorgia",0.0440813861933178
+"10","stateHawaii",0.320571127827461
+"11","stateIdaho",-0.06690425614328
+"12","stateIllinois",0.0738122010510249
+"13","stateIndiana",0.0153779167122092
+"14","stateIowa",0.0360594483649479
+"15","stateKansas",-0.00150129616782336
+"16","stateKentucky",0.133618331220953
+"17","stateLouisiana",0.0748187754860271
+"18","stateMaine",0.0109608946081845
+"19","stateMaryland",0.0173737338935048
+"20","stateMassachusetts",0.0149796635873957
+"21","stateMichigan",-0.0130599377395781
+"22","stateMinnesota",0.00562963227676355
+"23","stateMississippi",0.0621121947305643
+"24","stateMissouri",0.0112396905688034
+"25","stateMontana",-0.0462089482290916
+"26","stateNebraska",-0.0173774748863595
+"27","stateNevada",-0.109124865063711
+"28","stateNew Hampshire",0.0449351716678921
+"29","stateNew Jersey",0.108814909326003
+"30","stateNew Mexico",-0.143766632480217
+"31","stateNew York",0.129263322239445
+"32","stateNorth Carolina",0.033797421070061
+"33","stateNorth Dakota",-0.0102502633168698
+"34","stateOhio",0.0164643874349916
+"35","stateOklahoma",-0.0133029005283413
+"36","stateOregon",-0.0454592689149932
+"37","statePennsylvania",0.0621159514612782
+"38","stateRhode Island",0.0580172538038668
+"39","stateSouth Carolina",0.0193928121854927
+"40","stateSouth Dakota",-0.00566111001735056
+"41","stateTennessee",0.0313530610791199
+"42","stateTexas",-0.0735238995715219
+"43","stateUtah",-0.101766383197642
+"44","stateVermont",-0.0286194963376674
+"45","stateVirginia",-0.0620024292853823
+"46","stateWashington",0.00637376362942687
+"47","stateWest Virginia",0.0376816617892886
+"48","stateWisconsin",0.0100162850556926
+"49","stateWyoming",-0.159711549920933
