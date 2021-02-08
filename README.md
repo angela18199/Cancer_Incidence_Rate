@@ -1,4 +1,4 @@
-# Cancer_Incidence_Rate
+# Cancer Incidence Rate
 Individual Final Project for the course "IDS702.01 Modeling and Representation of Data" at Duke University.
 Students should find their interested topics and datasets by themself and finish a analysis applying statistical model.  
 
